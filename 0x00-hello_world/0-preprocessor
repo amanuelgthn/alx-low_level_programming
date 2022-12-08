@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILE -O interm
+gcc -E $CFILE -O c
