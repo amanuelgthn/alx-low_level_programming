@@ -1,11 +1,15 @@
 #include <stdio.h>
 /**
  *
- *  *main hello world - Entry point
+ *  * main - Entry point
  *
- *   *Description 'Hello World'
+ *   * 
  *
- *    *Return: Always 0 (Success)
+ *    * Description: 'the program's description'
+ *
+ *     * 
+ *
+ *      * Return: Always 0 (Success)
  *
  **/
 int main(void)
