@@ -3,7 +3,7 @@
  *
  *  * main - Entry point
  *
- *   *
+ *   *Description 'Hello World'
  *
  *    * Return: Always 0 (Success)
  *
