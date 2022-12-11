@@ -5,6 +5,7 @@
  *Return: Always 0 (Success)
  **/
 int main(void)
+{
 	char a;
 	int b;
 	long int c;
@@ -16,3 +17,6 @@ int main(void)
 	printf("Size of a long int: %d bytes\n", sizeof(c));
 	printf("Size of a long long int: %d bytes\n", sizeof(d));
 	printf("Size of a float: %d bytes\n", sizeof(e));
+
+	return(0);
+}
