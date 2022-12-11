@@ -17,7 +17,8 @@ int main(void)
 		{
 			if (j == i)
 			{
-				putchar('')
+				j=j+1;
+				continue;
 			}
 			else
 			{
