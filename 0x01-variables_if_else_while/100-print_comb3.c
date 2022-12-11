@@ -15,14 +15,10 @@ int main(void)
         {
 		for (j = 1; j < 10; j++)
 		{
-			if (j == i)
-			{
-				j=j+1;
-				continue;
-			}
-			else
+			if (j != i)
 			{
 				putchar((i) + '0');
+			}
 			{
 				putchar((j) + '0');
 				putchar(',');
@@ -33,4 +29,3 @@ int main(void)
         putchar('\n');
         return (0);
 }
-
