@@ -13,9 +13,15 @@ int main(void)
 
         for (i = 0; i < 8; i++)
         {
-		for (j = 1; j != i; j < 10; j++)
+		for (j = 1; j < 10; j++)
 		{
-			putchar((i) + '0');
+			if (j == i)
+			{
+				putchar('')
+			}
+			else
+			{
+				putchar((i) + '0');
 			{
 				putchar((j) + '0');
 				putchar(',');
