@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-        int i;
-        int j;
+       	int i;
+	int j;
 	int k;
 	
 	for (i = 0; i < 8; i++)
-        {
-                for (j = i + 1; j < 9; j++)
+	{
+		for (j = i + 1; j < 9; j++)
 		{
 			for (k = j + 1; k < 10; k++)
 			{
@@ -27,7 +27,8 @@ int main(void)
 				}
 				{
 					putchar((k) + '0');
-					if (j == 8 && i == 7 && k==9)
+
+					if (j == 8 && i == 7 && k == 9)
 					{
 						break;
 					}
