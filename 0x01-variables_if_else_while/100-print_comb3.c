@@ -9,16 +9,20 @@ int main(void)
 {
         int i;
 	int j;
-        for (i = 0; i < 9; i++){
-		for (j = 1; j < 10; j++){
+
+        for (i = 0; i < 9; i++)
+        {
+		for (j = 1; i < 10; J++)
+		{
 			putchar((i) + '0');
-			if (i != j)
+			if (i < 9)
 			{
-				putchar((j) + '0');
 				putchar(',');
 				putchar(' ');
 			}
 		}
+	}
         putchar('\n');
         return (0);
 }
+
