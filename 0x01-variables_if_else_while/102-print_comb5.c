@@ -25,25 +25,25 @@ int main(void)
 				}
 				{
 					putchar((j) + '0');
+				}
+				{
+					putchar(' ');
+				}
+				{
+					if (k > i-1)
 					{
-						putchar(' ');
-					}
-					{
-						if (k > i-1)
+						if (j == 9 && i == 7 && k == 9 && l == 9)
+							break;
+						else
 						{
-							if (j == 9 && i == 7 && k == 9 && l == 9)
-								break;
-							else
-							{
-								putchar((k) + '0');
-							}
-							{
-								putchar((l) + '0');
-							}
-							{
-								putchar(',');
-								putchar(' ');
-							}
+							putchar((k) + '0');
+						}
+						{
+							putchar((l) + '0');
+						}
+						{
+							putchar(',');
+							putchar(' ');
 						}
 					}
 				}
