@@ -20,36 +20,33 @@ int main(void)
 			for (k=j +1; k < 10; k++)
 			{
 				for (l=k +1; l <10; l++)
+				{
+					putchar((i) + '0');
+				}
+				{
+					putchar((j) + '0');
 					{
-						if (j > i)
+						putchar(' ');
+					}
+					{
+						if (k > i-1)
 						{
-							putchar((i) + '0');
-						}
-						{
-							putchar((j) + '0');
-						}
-						{
-							putchar(' ');
-						}
-						{
-							if (k > i-1)
+							if (j == 9 && i == 7 && k == 9 && l == 9)
+								break;
+							else
 							{
-								if (j == 9 && i == 7 && k == 9 && l == 9)
-									break;
-								else
-								{
-									putchar((k) + '0');
-								}
-								{
-									putchar((l) + '0');
-								}
-								{
-									putchar(',');
-									putchar(' ');
-								}
+								putchar((k) + '0');
+							}
+							{
+								putchar((l) + '0');
+							}
+							{
+								putchar(',');
+								putchar(' ');
 							}
 						}
 					}
+				}
 			}
 		}
 	}
