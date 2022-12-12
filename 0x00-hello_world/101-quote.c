@@ -7,7 +7,17 @@
 int main (void)
 {
 	char c[] ="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	putchar(c);
+	int count;
+	for (count = 0; count < 57; count++)
+	{
+		if (c[count] == '\0')
+		{
+			putchar('\n');
+			break;
+		}
+		else
+			putchar(c[count]);
+	}
 	putchar('\n');
 	return (1);
 }
