@@ -21,16 +21,18 @@ int main(void)
 			{
 				for (l=k +1; l <10; l++)
 				{
-					putchar((i) + '0');
-				}
-				{
-					putchar((j) + '0');
-				}
-				{
-					putchar(' ');
-				}
-				{
-					if (k > i-1)
+					if (l >= K && K >= j && j >= i)
+					{
+						putchar((i) + '0');
+						putchar((j) + '0');
+					}
+					{
+						putchar(' ');
+					}
+					else
+					{
+						continue;
+					}
 					{
 						if (j == 9 && i == 7 && k == 9 && l == 9)
 							break;
