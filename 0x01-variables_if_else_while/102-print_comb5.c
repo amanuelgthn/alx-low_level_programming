@@ -15,11 +15,11 @@ int main(void)
 
         for (i = 0; i < 10; i++)
         {
-                for (j = i + 1; j <8; j++)
+                for (j = i; j <8; j++)
                 {
-			for (k=j +1; k < 10; k++)
+			for (k = j; k < 10; k++)
 			{
-				for (l=k +1; l <10; l++)
+				for (l = 0; l <10; l++)
 				{
 					if (l >= k && k >= j && j >= i)
 					{
