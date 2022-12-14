@@ -1,3 +1,4 @@
+#include <stdio.h>
 void print_alphabet()
 {
         char i;
@@ -7,5 +8,4 @@ void print_alphabet()
                 putchar (i);
         }
         putchar ('\n');
-return (0);
 }
