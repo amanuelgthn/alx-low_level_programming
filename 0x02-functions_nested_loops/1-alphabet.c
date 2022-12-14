@@ -7,6 +7,7 @@
  **Description - if statements                                                                    *Return: Always 0 (Success)                                                                     
  **/
 int print_alphabet(char);
+int main()
 {
 	char i;
 
