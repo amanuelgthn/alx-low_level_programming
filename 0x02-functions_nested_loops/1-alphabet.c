@@ -1,8 +1,9 @@
-int print_alphabet(char i)
+int print_alphabet()
 {
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		return(i);
-	}
-	return('\n');
+    char i;
+        for (i = 'a'; i <= 'z'; i++)
+        {
+                return(i);
+        }
+        return('\n');
 }
