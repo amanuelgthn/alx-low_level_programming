@@ -1,2 +1,2 @@
 #include <string.h>
-char hello;
+void print_alphabet();
