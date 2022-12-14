@@ -1,7 +1,5 @@
-int print_alphabet(char)
+int print_alphabet(char i)
 {
-	char i;
-
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		return(putchar (i));
