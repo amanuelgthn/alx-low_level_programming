@@ -2,7 +2,7 @@
 /**
  * function_name - Short description, single line
 (*
- * Description: prints alphabet
+ * print_alphabet: prints alphabet
 (* section header: Section description)*
  * Return: Description of the returned value
  */
