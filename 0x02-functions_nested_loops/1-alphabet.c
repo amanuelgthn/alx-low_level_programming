@@ -6,9 +6,10 @@
  *main - Entry point                                                                             
  **Description - if statements                                                                    *Return: Always 0 (Success)                                                                     
  **/
-int print_alphabet();
+int print_alphabet(char);
 {
 	char i;
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		putchar (i);
