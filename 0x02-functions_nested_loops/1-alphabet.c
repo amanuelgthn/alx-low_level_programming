@@ -1,9 +1,11 @@
-int print_alphabet()
+void print_alphabet
 {
-    char i;
+        char i;
+
         for (i = 'a'; i <= 'z'; i++)
         {
-                return(i);
+                putchar (i);
         }
-        return('\n');
+        putchar ('\n');
+return (0);
 }
