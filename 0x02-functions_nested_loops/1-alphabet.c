@@ -1,11 +1,7 @@
 #include <stdio.h>
 /**
- * function_name - Short description, single line
-(*
- * print_alphabet: prints alphabet
-(* section header: Section description)*
- * Return: Description of the returned value
- */
+ *print_alphabet: prints alphabet
+**/
 void print_alphabet(void)
 {
 	char i;
