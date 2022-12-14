@@ -4,8 +4,7 @@ int print_alphabet(char)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar (i);
+		return(putchar (i));
 	}
-	putchar ('\n');
-return (0);
+	return(putchar ('\n'));
 }
