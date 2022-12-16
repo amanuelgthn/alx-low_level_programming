@@ -12,11 +12,11 @@ int main(void)
 
 	i = 0;
 
-/**
+/*
 *Description - while (i < 10)
 *	{
 *		putchar(i);
-*	}
+*@i: Description of parameter x	}
 */
 	printf("Infinite loop avoided! \\o/\n");
 
