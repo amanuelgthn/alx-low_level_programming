@@ -14,7 +14,7 @@ int _abs(int n)
 	}
 	else if (n < 0)
 	{
-		return 0 - n;
+		return (0 - n);
 	}
 }
 
