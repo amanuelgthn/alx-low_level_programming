@@ -8,6 +8,6 @@
 **/
 int _abs(int n)
 {
-	return pow(n * n,0.5);
+	return (n * n / n);
 }
 
