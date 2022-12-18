@@ -32,7 +32,7 @@ int main(void)
 						continue;
 					}
 					{
-						if (i * 10 + j == 98 && k * 10 + l == 99)
+						if (i * 10 + j == 98 && k * 10 + l == 100)
 							break;
 						{
 							putchar((k) + '0');
