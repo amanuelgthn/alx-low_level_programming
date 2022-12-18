@@ -27,19 +27,17 @@ int main(void)
 						putchar((j) + '0');
 						putchar(' ');
 					}
-					else
 					{
-						continue;
+						putchar((k) + '0');
+						putchar((l) + '0');
+					}
+					if ((i * 10) + j == 98 && (k * 10) + l == 99)
+					{
+						break;
 					}
 					{
-						if (i * 10 + j == 98 && k * 10 + l == 100)
-							break;
-						{
-							putchar((k) + '0');
-							putchar((l) + '0');
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
