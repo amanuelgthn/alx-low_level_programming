@@ -14,7 +14,7 @@ int print_last_digit(int n)
 	{
 		y = n;
 	}
-	else 
+	else
 	{
 		y = -n;
 	}
