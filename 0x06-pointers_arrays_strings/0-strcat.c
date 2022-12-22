@@ -2,20 +2,23 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strcpy - Short description, single line
+ *_strcat - Short description, single line
  *@dest:input nuber
  *@src:string to be copied
  *Return: Always 0.
  **/
 
-char *_strcpy(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int n;
+	int k;
+
 	n = strlen(src);
-	for (i = 0; i < n; i++)
+	k = strlen(dest);
+	for (i = k; i < n + k; i++)
 	{
-		dest[i] = src[i];
+		dest[i] = src[i - n];
 	}
 	return (dest);
 }
