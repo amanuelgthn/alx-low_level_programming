@@ -20,9 +20,12 @@ void reverse_array(int *a, int n)
 		}
 		printf("%d", a[i]);
 		i--;
+		if (i != 0)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
-
 }
 
 
