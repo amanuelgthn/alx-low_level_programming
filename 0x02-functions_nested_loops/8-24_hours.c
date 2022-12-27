@@ -17,13 +17,13 @@ void jack_bauer(void)
 			{
 				printf("0");
 			}
-			printf("%d",i);
+			printf("%d", i);
 			printf(":");
 			if (j < 10)
 			{
 				printf("0");
 			}
-			printf("%d",j);
+			printf("%d", j);
 			printf("\n");
 		}
 	}
