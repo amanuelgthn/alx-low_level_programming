@@ -23,7 +23,7 @@ void times_table(void)
 			{
 				break;
 			}
-			printf(", ");
+			printf(",");
 		}
 		printf("\n");
 	}
