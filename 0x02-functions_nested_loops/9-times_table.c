@@ -15,7 +15,15 @@ void times_table(void)
 		{
 			k = i * j;
 			printf("%d", k);
+			if (j == 9)
+			{
+				break;
+			}
 			printf(", ");
+			if (k < 10)
+			{
+				printf(" ");
+			}
 		}
 		printf("\n");
 	}
