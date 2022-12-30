@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  *print_times_table - Times table
- *n: number of times tables
+ *@n: number of times tables
  *return - 0 sucess
  **/
 void print_times_table(int n)
@@ -24,7 +24,7 @@ void print_times_table(int n)
 				printf(" ");
 			}
 			printf("%d", k);
-			if (j == 9)
+			if (j == n)
 			{
 				break;
 			}
