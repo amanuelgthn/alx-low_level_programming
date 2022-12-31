@@ -4,7 +4,7 @@
  *main - print first 50 fibonacci numbers
  *Return: 0 success
  **/
-int main()
+int main(void)
 {
 	int a, i, j, k;
 
@@ -15,13 +15,17 @@ int main()
 	printf("%d", k);
 	printf(", ");
 
-	while (i < 50)
+	while (i < 51)
 	{
 		a = k;
 		k = k + j;
 		j = a;
 		printf("%d", k);
 		printf(", ");
+		if ( i = 50)
+		{
+			break;
+		}
 		i++;
 	}
 	return (0);
