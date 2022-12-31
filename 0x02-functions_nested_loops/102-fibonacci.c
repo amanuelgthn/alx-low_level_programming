@@ -4,18 +4,18 @@
  *main - print first 50 fibonacci numbers
  *Return: 0 success
  **/
-int main(void)
+int main()
 {
-	int a,i,j,k;
-	
+	int a, i, j, k;
+
 	j = 1;
 	k = 2;
-	printf("%d",j);
+	printf("%d", j);
 	printf(", ");
-	printf("%d",k);
+	printf("%d", k);
 	printf(", ");
 
-	while(i < 50)
+	while (i < 50)
 	{
 		a = k;
 		k = k + j;
