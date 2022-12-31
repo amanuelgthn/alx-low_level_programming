@@ -22,7 +22,7 @@ int main(void)
 		j = a;
 		printf("%d", k);
 		printf(", ");
-		if ( i = 50)
+		if ( i == 50)
 		{
 			break;
 		}
