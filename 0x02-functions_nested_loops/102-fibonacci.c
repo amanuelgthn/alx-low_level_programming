@@ -11,17 +11,17 @@ int main(void)
 	j = 1;
 	k = 2;
 	printf("%d", j);
-	printf(", ");
+	printf(", ")
 	printf("%d", k);
 	printf(", ");
 
-	for (i = 0 ; i < 48 ; i++)
+	for (i = 2 ; i < 51 ; i++)
 	{
 		a = k;
 		k = k + j;
 		j = a;
 		printf("%d", k);
-		if ( i == 48)
+		if (i == 50)
 		{
 			break;
 		}
