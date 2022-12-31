@@ -8,14 +8,14 @@ int main(void)
 {
 	int a,i,j,k;
 	
-	j == 1;
-	k == 2;
+	j = 1;
+	k = 2;
 	printf("%d",j);
 	printf(", ");
 	printf("%d",k);
 	printf(", ");
 
-	while(i == 0 ;i < 50)
+	while(i < 50)
 	{
 		a = k;
 		k = k + j;
