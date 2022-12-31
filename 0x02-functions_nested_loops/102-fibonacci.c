@@ -15,7 +15,7 @@ int main(void)
 	printf("%d", k);
 	printf(", ");
 
-	while (i < 51)
+	for (i = 0 ; i < 51 ; i++)
 	{
 		a = k;
 		k = k + j;
@@ -26,7 +26,6 @@ int main(void)
 		{
 			break;
 		}
-		i++;
 	}
 	return (0);
 }
