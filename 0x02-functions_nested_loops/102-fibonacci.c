@@ -19,8 +19,8 @@ int main(void)
 	{
 		a = k + j;
 		printf("%d", a);
-		k = a;
 		j = k;
+		k = a;
 		if (i == 50)
 		{
 			break;
