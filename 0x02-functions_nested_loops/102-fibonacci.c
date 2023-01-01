@@ -18,7 +18,7 @@ int main(void)
 	for (i = 2 ; i < 51 ; i++)
 	{
 		a = k + j;
-		printf("%d", k);
+		printf("%d", a);
 		k = a;
 		j = k;
 		if (i == 50)
