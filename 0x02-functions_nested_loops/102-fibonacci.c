@@ -17,10 +17,10 @@ int main(void)
 
 	for (i = 2 ; i < 51 ; i++)
 	{
-		a = k;
-		k = k + j;
-		j = a;
+		a = k + j;
 		printf("%d", k);
+		k = a;
+		j = k;
 		if (i == 50)
 		{
 			break;
@@ -29,5 +29,3 @@ int main(void)
 	}
 	return (0);
 }
-
-
