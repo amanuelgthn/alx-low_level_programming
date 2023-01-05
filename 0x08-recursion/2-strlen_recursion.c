@@ -4,11 +4,12 @@
 /**
  *_strlen_recursion- print with recurssion
  *@s: string which length to be returned
- *Return: 0 sucess
+ *Return: length of string sucess
  **/
 int _strlen_recursion(char *s)
 {
 	int i = 0;
+	
 	if (*s != '\0')
 	{
 		return (i);
