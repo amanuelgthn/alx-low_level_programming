@@ -18,7 +18,7 @@ int _sqrt_finder(int k, int i)
 	}
 	else if (i * i < k)
 	{
-		_sqrt_finder(k,i + 1);
+		return(_sqrt_finder(k,i + 1));
 	}
 	else if (i * i == k)
 	{
