@@ -14,7 +14,7 @@ int _prime_finder(int k, int i)
 	{
 		return (0);
 	}
-	else if (k % i != 0 && i < k / 2)
+	else if (k % i != 0 && (i * i) < ((k / 2) * (k / 2)))
 	{
 		return (_prime_finder(k, i + 1));
 	}
