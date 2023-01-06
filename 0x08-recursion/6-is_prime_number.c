@@ -2,7 +2,7 @@
 #include<string.h>
 #include"main.h"
 /**
-*__prime_finder- find if given number is prime or not
+*_prime_finder- find if given number is prime or not
 *@k:number
 *@i:iterating number
 *Return: 1 if number is prime numberand 0 if not
