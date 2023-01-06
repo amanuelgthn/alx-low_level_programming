@@ -6,21 +6,21 @@
 *@n:number
 *Return- square root of the number n
 **/
-int _sqrt_finder(int n, int i)
+int _sqrt_finder(int k, int i)
 {
 	if (n < 0)
 	{
 		return (-1);
 	}
-	else if (n == 0 || n == 1)
+	else if (k == 0 || k == 1)
 	{
-		return (n);
+		return (k);
 	}
-	else if (i * i < n)
+	else if (i * i < k)
 	{
-		_sqrt_finder(n,i + 1);
+		_sqrt_finder(k,i + 1);
 	}
-	else if (i * i == n)
+	else if (i * i == k)
 	{
 		return (i);
 	}
