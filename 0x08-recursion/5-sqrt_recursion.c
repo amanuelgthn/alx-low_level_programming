@@ -8,7 +8,7 @@
 **/
 int _sqrt_finder(int k, int i)
 {
-	if (n < 0)
+	if (k < 0)
 	{
 		return (-1);
 	}
@@ -31,5 +31,8 @@ int _sqrt_finder(int k, int i)
 }
 int _sqrt_recursion(int n)
 {
-	int _sqrt_finder(n, 1);
+	int j;
+	
+	j = int _sqrt_finder(n, 1);
+	return (j);
 }
