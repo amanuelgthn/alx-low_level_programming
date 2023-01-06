@@ -10,25 +10,25 @@
 int _prime_finder(int k, int i)
 {
 
-	if (k % i == 0 || k =)
+	if (k == -1 || k == 1)
 	{
-		return (k);
+		return (1);
 	}
-	else if (i * i < k)
+	else if (k % i != 0 && i < k / 2)
 	{
-		return (_sqrt_finder(k, i + 1));
+		return (_prime_finder(k, i + 1));
 	}
-	else if (i * i == k)
+	else if (K % i == 0)
 	{
-		return (i);
+		return (0);
 	}
 	else
 	{
-		return (i - 1);
+		return (1);
 	}
 }
 /**
-*_sqrt_recursion- find if given number is prime or not
+*is_prime_number- find if given number is prime or not
 *@n:number
 *Return: 1 if number is prime number and 0 if not
 **/
