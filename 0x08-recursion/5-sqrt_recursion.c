@@ -6,10 +6,8 @@
 *@n:number
 *Return- square root of the number n
 **/
-int _sqrt_recursion(int n)
+int _sqrt_finder(int n, int i)
 {
-	int i = 1;
-	
 	if (n < 0)
 	{
 		return (-1);
@@ -20,8 +18,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (i * i < n)
 	{
-		i++;
-		_sqrt_recursion(n);
+		_sqrt_finder(n,i + 1);
 	}
 	else if (i * i == n)
 	{
@@ -31,4 +28,8 @@ int _sqrt_recursion(int n)
 	{
 		return (i - 1);
 	}
+}
+int _sqrt_recursion(int n)
+{
+	int _sqrt_finder(n, 1);
 }
