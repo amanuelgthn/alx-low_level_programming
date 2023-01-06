@@ -12,7 +12,7 @@ int _prime_finder(int k, int i)
 
 	if (k == -1 || k == 1)
 	{
-		return (1);
+		return (0);
 	}
 	else if (k % i != 0 && i < k / 2)
 	{
