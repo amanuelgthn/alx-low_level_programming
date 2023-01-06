@@ -33,6 +33,6 @@ int _sqrt_recursion(int n)
 {
 	int j;
 	
-	j = int _sqrt_finder(n, 1);
+	j = _sqrt_finder(n, 1);
 	return (j);
 }
