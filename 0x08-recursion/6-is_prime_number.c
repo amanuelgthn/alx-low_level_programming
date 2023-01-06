@@ -18,7 +18,7 @@ int _prime_finder(int k, int i)
 	{
 		return (_prime_finder(k, i + 1));
 	}
-	else if (K % i == 0)
+	else if (k % i == 0)
 	{
 		return (0);
 	}
