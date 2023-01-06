@@ -5,7 +5,7 @@
 *_sqrt_finder- find the square root
 *@k:number
 *@i:iterating number
-*Return: the square root of k 
+*Return: the square root of k
 **/
 int _sqrt_finder(int k, int i)
 {
@@ -25,7 +25,7 @@ int _sqrt_finder(int k, int i)
 	{
 		return (i);
 	}
-	else 
+	else
 	{
 		return (i - 1);
 	}
@@ -33,7 +33,7 @@ int _sqrt_finder(int k, int i)
 /**
 *_sqrt_recursion- return square root using recursion
 *@n:number
-*Return- square root of the number n
+*Return: square root of the number n
 **/
 int _sqrt_recursion(int n)
 {
