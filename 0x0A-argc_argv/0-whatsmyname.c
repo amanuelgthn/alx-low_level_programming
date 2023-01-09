@@ -6,7 +6,7 @@
 *@argc: number of arguments
 *Return:0 success
 **/
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	while (argc--)
 	{
