@@ -6,9 +6,8 @@
 *@argc: number of arguments
 *Return:0 success
 **/
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	printf("argc = %d\n", argc);
-	printf("\n");
 	return (0);
 }
