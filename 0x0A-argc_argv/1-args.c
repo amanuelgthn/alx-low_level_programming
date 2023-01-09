@@ -11,5 +11,5 @@ int main(int argc, char *argv[])
 	char *p = *argv[0];
 	printf("%c", argc);
 	printf("\n");
-	return (0);
+	return (*p);
 }
