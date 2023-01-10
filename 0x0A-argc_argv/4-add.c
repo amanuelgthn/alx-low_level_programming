@@ -16,7 +16,7 @@ int main(int argc, char(*argv[]))
 	}
 	else
 	{
-		for (i = 1; i < argc + 1; i++)
+		for (i = 1; i < argc; i++)
 		{
 			if (!atoi(argv[i]))
 			{
@@ -28,8 +28,8 @@ int main(int argc, char(*argv[]))
 				k = k + atoi(argv[i]);
 			}
 		}
+		printf("%d\n", k);
 	}
-	printf("%d\n", k);
 	return (0);
 }
 		
