@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 /**
  *main- function to sum all given arguments 
  *@argc:number of arguments
