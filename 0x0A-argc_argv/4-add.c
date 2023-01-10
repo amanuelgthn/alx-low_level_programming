@@ -28,8 +28,8 @@ int main(int argc, char(*argv[]))
 				k = k + atoi(argv[i]);
 			}
 		}
-		printf("%d\n", k);
-		return (0);
 	}
+	printf("%d\n", k);
+	return (0);
 }
 		
