@@ -30,7 +30,7 @@ int main(int argc, char(*argv[]))
 				break;
 			}
 		}
-		if (k = -1)
+		if (k == -1)
 		{
 			printf("Error\n");
 		}
