@@ -25,13 +25,19 @@ int main(int argc, char(*argv[]))
 			}
 			else
 			{
-				printf("Error\n");
+				k = -1;
 				return (1);
 				break;
 			}
 		}
-		printf("%d\n", k);
-	}
+		if (k = -1)
+		{
+			printf("Error\n");
+		}
+		else
+		{
+			printf("%d\n", k);
+		}
 	return (0);
 }
 		
