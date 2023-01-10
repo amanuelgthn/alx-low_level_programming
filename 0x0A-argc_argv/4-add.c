@@ -38,6 +38,6 @@ int main(int argc, char(*argv[]))
 		{
 			printf("%d\n", k);
 		}
+	}
 	return (0);
-}
-		
+}		
