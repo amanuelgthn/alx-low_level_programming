@@ -2,12 +2,14 @@
 #include<stdlib.h>
 /**
 *_coin - return the number of coins for change
-*return: number of coins for change
+*@money:change money
+*@coins:iterating coin change
+*Return: number of coins for change
 **/
 int _coin(int money, int coins)
 {
 	int a[5] = {25, 10, 5, 2};
-	
+
 	if (money == 3)
 	{
 		return (2);
@@ -20,12 +22,12 @@ int _coin(int money, int coins)
 		}
 		else
 		{
-			return (money / a[coins] + _coin(money % a[coins], coins+1));
+			return (money / a[coins] + _coin(money % a[coins], coins + 1));
 		}
 	}
 	else if (money < a[coins] && money != 1)
 	{
-		return (_coin(money,coins + 1));
+		return (_coin(money, coins + 1));
 	}
 	else
 	{
@@ -33,7 +35,7 @@ int _coin(int money, int coins)
 	}
 }
 /**
- * main- print the minimum number of coins to make change 
+ * main- print the minimum number of coins to make change
  * @argc:number of arguments
  * @argv:arguments
  * Return: 1 if no arguments passed, 0 if argument passed is a negative number
