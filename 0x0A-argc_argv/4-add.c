@@ -22,7 +22,7 @@ int main(int argc, char(*argv[]))
 			j = atoi(argv[i]);
 			if(isdigit(j) != 0)
 			{
-				k = k + atoi(argv[i]);
+				k = k + j;
 			}
 			else
 			{
