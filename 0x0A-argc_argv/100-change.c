@@ -18,7 +18,7 @@ int _coin(int money, int coins)
 			return (money / a[coins] + _coin(money % a[coins],coins+1));
 		}
 	}
-	else if(money < a[coins] && coins <=4 && money != 1)
+	else if(money < a[coins] && money != 1)
 	{
 		return(_coin(money,coins+1));
 	}
@@ -26,6 +26,8 @@ int _coin(int money, int coins)
   {
     return(1);
   }
+}
+			
 }			
 /**
  * main- print the minimum number of coins to make change for an amount of money
