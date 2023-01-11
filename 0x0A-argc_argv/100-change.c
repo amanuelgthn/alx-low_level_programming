@@ -8,10 +8,10 @@ int _coin(int money, int coins)
 {
 	int a[5] = {25, 10, 5, 2};
 	
-  if (money == 3)
-  {
-    return (2);
-  }
+	if (money == 3)
+	{
+		return (2);
+	}
 	if (money >= a[coins] && coins <= 4)
 	{
 		if (money % a[coins] == 0)
@@ -27,11 +27,11 @@ int _coin(int money, int coins)
 	{
 		return (_coin(money,coins + 1));
 	}
-  else
-  {
-    return (1);
-  }
-}		
+	else
+	{
+		return (1);
+	}
+}
 /**
  * main- print the minimum number of coins to make change 
  * @argc:number of arguments
@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			i =_coin(number,0);
-			printf("%d\n",i);
+			i = _coin(number, 0);
+			printf("%d\n", i);
 		}
 	}
 	return (0);
