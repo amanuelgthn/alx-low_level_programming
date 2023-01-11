@@ -6,17 +6,16 @@
 **/
 int _coin(int money, int coins)
 {
-	int itr = 0;
 	int a[5] = {25, 10, 5, 2, 1}
-	if(money > a[i])
+	if(money > a[coins]&& coins <= 5)
 	{
-		if(money % a[i] == 0)
+		if(money % a[coins] == 0)
 		{
-			return (money / a[i]);
+			return (money / a[coins]);
 		}
 		else
 		{
-			return (money / a[i] + _coin(money % a[i],coins+1));
+			return (money / a[coins] + _coin(money % a[coins],coins+1));
 		}
 	}
 			
@@ -28,7 +27,7 @@ int _coin(int money, int coins)
  **/
 int main(int argc, char *argv[])
 {
-	int i,number,j,k;
+	int i,number;
 
 	if (argc == 1)
 	{
@@ -38,7 +37,15 @@ int main(int argc, char *argv[])
 	else
 	{
 		number= atoi(argv[1]);
-		_coin(number,0);
+		if (number <= 0)
+		{
+			printf("0\n");
+		}
+		else
+		{
+			i=_coin(number,0);
+			printf("%d",i);
+		}
 	}
 	return (0);
 }
