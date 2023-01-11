@@ -2,16 +2,16 @@
 #include<stdlib.h>
 #include<ctype.h>
 /**
- *main- function to sum all given arguments 
+ *main- function to sum all given arguments
  *@argc:number of arguments
  *@argv:arguments
  *Return: 0 in sucess 1 upon encoutering error
  **/
 int main(int argc, char(*argv[]))
 {
-	int i,k = 0;
-	
-	if ( argc == 1)
+	int i, k = 0;
+
+	if (argc == 1)
 	{
 		printf("0\n");
 	}
@@ -19,7 +19,7 @@ int main(int argc, char(*argv[]))
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if(atoi(argv[i])>=0 || atoi(argv[i])<0)
+			if (atoi(argv[i]) >= 0 || atoi(argv[i]) < 0)
 			{
 				k = k + atoi(argv[i]);
 			}
@@ -27,7 +27,6 @@ int main(int argc, char(*argv[]))
 			{
 				k = -1;
 				return (1);
-				break;
 			}
 		}
 		if (k == -1)
@@ -40,4 +39,4 @@ int main(int argc, char(*argv[]))
 		}
 	}
 	return (0);
-}		
+}
