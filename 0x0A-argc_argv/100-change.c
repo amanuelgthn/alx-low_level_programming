@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 		else
 		{
 			i=_coin(number,0);
-			printf("%d",i);
+			printf("%d\n",i);
 		}
 	}
 	return (0);
