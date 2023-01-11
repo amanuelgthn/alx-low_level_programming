@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
+*_coin - return the number of coins for change
+*return: number of coins for change 
+/**
  * main- print the minimum number of coins to make change for an amount of money
  * @argc:number of arguments
  * @argv:arguments
@@ -18,11 +21,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		number= atoi(argv[1]);
-		if (i < 0)
-		{
-			printf("0\n");
-		}
-		else
-		{
-			if(
-
+		_coin(number);
+	}
+	return (0);
+}
