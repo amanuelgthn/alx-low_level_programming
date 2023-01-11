@@ -20,7 +20,7 @@ int _coin(int money, int coins)
 	}
 	else
 	{
-		_coin(money,coins+1);
+		return(_coin(money,coins+1));
 	}
 }
 			
