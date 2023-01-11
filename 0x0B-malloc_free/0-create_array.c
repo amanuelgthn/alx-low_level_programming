@@ -11,7 +11,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *str;
 	
-	str = malloc(sizeof(char) * size);
+	str = malloc(sizeof(*str) * size);
 	
 	if (size == 0)
 	{
@@ -26,5 +26,20 @@ char *create_array(unsigned int size, char c)
 	}
 	free(str);
 	return (str);
+	 while (i < size)
+    {
+        if (i % 10)
+        {
+            printf(" ");
+        }
+        if (!(i % 10) && i)
+        {
+            printf("\n");
+        }
+        printf("0x%02x", buffer[i]);
+        i++;
+    }
+    printf("\n");
+}
 }
 	
