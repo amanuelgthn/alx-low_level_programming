@@ -6,7 +6,7 @@
 **/
 int _coin(int money, int coins)
 {
-	int a[5] = {25, 10, 5, 2, 1}
+	int a[5] = {25, 10, 5, 2, 1};
 	if(money > a[coins]&& coins <= 5)
 	{
 		if(money % a[coins] == 0)
@@ -18,6 +18,7 @@ int _coin(int money, int coins)
 			return (money / a[coins] + _coin(money % a[coins],coins+1));
 		}
 	}
+}
 			
 /**
  * main- print the minimum number of coins to make change for an amount of money
