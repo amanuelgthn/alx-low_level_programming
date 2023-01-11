@@ -26,9 +26,7 @@ int _coin(int money, int coins)
   {
     return(1);
   }
-}
-			
-}			
+}		
 /**
  * main- print the minimum number of coins to make change for an amount of money
  * @argc:number of arguments
