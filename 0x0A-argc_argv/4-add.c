@@ -19,7 +19,7 @@ int main(int argc, char(*argv[]))
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if(isdigit(atoi(argv[i])) != 0)
+			if(isdigit(argv[i]) != 0)
 			{
 				k = k + atoi(argv[i]);
 			}
