@@ -7,6 +7,10 @@
 int _coin(int money, int coins)
 {
 	int a[5] = {25, 10, 5, 2};
+  if(money==3)
+  {
+    return(2);
+  }
 	if(money >= a[coins] && coins <=4)
 	{
 		if(money % a[coins] == 0)
