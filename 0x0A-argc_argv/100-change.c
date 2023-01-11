@@ -18,6 +18,10 @@ int _coin(int money, int coins)
 			return (money / a[coins] + _coin(money % a[coins],coins+1));
 		}
 	}
+	else
+	{
+		_coin(money,coins+1);
+	}
 }
 			
 /**
