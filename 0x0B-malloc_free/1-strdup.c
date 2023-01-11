@@ -1,5 +1,5 @@
 #include<stdio.h>
-#inclue<string.h>
+#include<string.h>
 #include<stdlib.h>
 /**
 *_strdup- function returns a pointer to a new string which is a duplicate of the string str
