@@ -27,13 +27,13 @@ void *malloc_checked(unsigned int b)
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int unsigned i, k, j = 0;
 	char *str;
+	int unsigned i, k, j = 0;
 
 	i = strlen(s1);
 	k = strlen(s1);
 	str = malloc_checked(sizeof(char) * (i + n));
-	if ( s1 == NULL)
+	if (s1 == NULL)
 	{
 		for (; j < n; j++)
 		{
