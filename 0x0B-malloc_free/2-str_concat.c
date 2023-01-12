@@ -2,11 +2,12 @@
 #include<string.h>
 #include<stdlib.h>
 /**
-*_strdup-returns a pointer to new string which is duplicate of string str
-*@str:string to be duplicated
+*str_concat-returns a pointer to new string which is duplicate of string str
+*@s1:string to be duplicated
+*@s1:string to be duplicated
 *Return: a pointer to a new string which is a duplicate of str upon sucess
 **/
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	char *string;
 	int i, j = 0;
