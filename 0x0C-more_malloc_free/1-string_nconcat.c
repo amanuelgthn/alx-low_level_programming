@@ -19,7 +19,7 @@ void *malloc_checked(unsigned int b)
 	return (a);
 }
 /**
- * string_noncat- function that  concatenates two strings
+ * string_nconcat- function that  concatenates two strings
  * @s1:string 1
  * @s2:string 2
  * @n: length of string s2 to be concatenated to s1
