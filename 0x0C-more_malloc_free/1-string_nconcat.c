@@ -23,12 +23,12 @@ void *malloc_checked(unsigned int b)
  * @s1:string 1
  * @s2:string 2
  * @n: length of string s2 to be concatenated to s1
- * Return: pointer pointing to the concatenated strings 
+ * Return: pointer pointing to the concatenated strings
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int unsigned i, k, j = 0;
+	unsigned int i, k, j = 0;
 
 	i = strlen(s1);
 	k = strlen(s1);
