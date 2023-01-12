@@ -19,8 +19,8 @@ char *_strdup(char *str)
 		{
 			string[j] = str[j];
 		}
+		return (string);
 	}
-	return (string);
 	else
 	{
 		return (NULL);
