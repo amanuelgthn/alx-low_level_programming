@@ -41,11 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	k = strlen(s1);
 	str = malloc_checked(sizeof(char) * (i + n));
-	if (s1 == "")
+	if (s1[0]== '\0')
 	{
 		for (; j < n; j++)
 		{
-			if (s2 == "")
+			if (s2[0] == '\0')
 			{
 				str = "";
 				break;
