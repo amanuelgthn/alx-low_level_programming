@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	{
 		return ("");
 	}
-	else if (i >= 0)
+	else
 	{
 		for (j = 0; j < i; j++)
 		{
