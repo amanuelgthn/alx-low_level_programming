@@ -27,10 +27,11 @@ void *malloc_checked(unsigned int b)
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j = 0;
+	int unsigned i, k, j = 0;
 	char *str;
 
 	i = strlen(s1);
+	k = strlen(s1);
 	str = malloc_checked(sizeof(char) * (i + n));
 	if ( s1 == NULL)
 	{
@@ -38,10 +39,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			if (s2 == NULL)
 			{
-				str[0] = "";
+				str = "";
 				break;
 			}
-			else if (s2[j] != '\0')
+			else if (j < k)
 			{
 				str[j] = s2[j];
 			}
@@ -51,11 +52,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (; j < i + n; j++)
 		{
-			if ( s1 != '\0')
+			if (j < i)
 			{
 				str[j] = s1[j];
 			}
-			else
+			else if (j < k + i)
 			{
 				str[j] = s2[j];
 			}
@@ -63,4 +64,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	return (str);
 }
-	
