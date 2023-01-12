@@ -56,7 +56,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			{
 				str[j] = s1[j];
 			}
-			else if (j < k + i)
+			else if (j <= k + i)
 			{
 				str[j] = s2[j - i];
 			}
