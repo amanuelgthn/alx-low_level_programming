@@ -23,6 +23,13 @@ char *_strdup(char *str)
 		{
 			string[j] = str[j];
 		}
-		return (string);
+		if (string == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			return (string);
+		}
 	}
 }
