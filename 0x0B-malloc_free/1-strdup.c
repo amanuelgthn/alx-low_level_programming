@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *string;
-	char *strings[0];
+	char *strings;
 	int i, j = 0;
 
 	if (str == NULL)
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 		i = strlen(str);
 		if ( i == 0)
 		{
-			strings[0] = str[0];
+			strings = str;
 			return (strings);
 		}
 		else
