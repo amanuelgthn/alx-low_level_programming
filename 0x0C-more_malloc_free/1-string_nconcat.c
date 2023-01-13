@@ -42,15 +42,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		str = malloc_checked(sizeof(char) * (i + n));
 	}
 	k = strlen(s1);
-	
+
 	if (s1[0] == '\0')
 	{
 		for (; j < n; j++)
 		{
-			if (j < k)
-			{
-				str[j] = s2[j];
-			}
+			str[j] = s2[j];
 		}
 	}
 	else
