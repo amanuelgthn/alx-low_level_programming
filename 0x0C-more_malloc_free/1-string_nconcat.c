@@ -34,9 +34,8 @@ char *pass_s2(char *str2, unsigned ln)
 	{
 		strptr[l] = str2[l];
 	}
-	rety
-	
-	
+	return (strptr);
+}		
 /**
  * string_nconcat- function that  concatenates two strings
  * @s1:string 1
@@ -51,8 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		i = 0;
-		str = malloc_checked(sizeof(char) * (n));
+		str = pass_s2(s2,n);
 	}
 	else
 	{
