@@ -23,7 +23,7 @@ void *malloc_checked(unsigned int b)
 *@ln: n bytes of strings to be passed
 *Return: pointer pointing to string s2
 **/
-char *pass_s2(char *str2, unsigned ln)
+char *pass_s2(char *str2, unsigned int ln)
 {
 	char *strptr;
 	unsigned int l, m ;
