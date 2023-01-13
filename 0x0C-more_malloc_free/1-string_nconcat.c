@@ -34,14 +34,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 		i = 0;
+		str = malloc_checked(sizeof(char) * (n));
 	}
 	else
 	{
 		i = strlen(s1);
+		str = malloc_checked(sizeof(char) * (i + n));
 	}
 	k = strlen(s1);
-	str = malloc_checked(sizeof(char) * (i + n));
-	if (s1[0]== '\0')
+	
+	if (s1[0] == '\0')
 	{
 		for (; j < n; j++)
 		{
