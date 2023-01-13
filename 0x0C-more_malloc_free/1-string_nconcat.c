@@ -28,7 +28,7 @@ char *pass_s2(char *str2, unsigned ln)
 	char *strptr;
 	unsigned int l, m ;
 	
-	strptr = malloc_checked(sizeof(char) * (n));
+	strptr = malloc_checked(sizeof(char) * (n) + 1);
 	m = strlen(str2);
 	for (l = 0; l < m && l < n; l++)
 	{
@@ -55,7 +55,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 	{
 		i = strlen(s1);
-		str = malloc_checked(sizeof(char) * (i + n));
+		str = malloc_checked(sizeof(char) * (i + n) + 1);
 	}
 	k = strlen(s1);
 	for (; j < i + n; j++)
