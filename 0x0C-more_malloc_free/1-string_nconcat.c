@@ -12,10 +12,10 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
-	char *str3[100];
-
-	unsigned int i = 0, j = 0;
-
+	char *str3;
+	
+	str3 = malloc[1024]
+	unsigned int i = 0, j = 0
 	while (s1[i] != '\0' && i < n) {
 		str3[j] = s1[i];
 		i++;
