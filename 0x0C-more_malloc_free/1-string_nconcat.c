@@ -51,7 +51,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		str = pass_s2(s2,n);
+		str = pass_s2(s2, n);
 	}
 	else
 	{
