@@ -4,7 +4,7 @@
 #include"main.h"
 /**
  * string_nconcat- function that  concatenates two strings
- * @s1:string 1
+ * @s1:string 1 
  * @s2:string 2
  * @n: length of string s2 to be concatenated to s1
  * Return: pointer pointing to the concatenated strings
