@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int i, k, j = 0;
 
-	if (s1 == NULL)
+	if (s1 == NULL || s1 == "")
 	{
 		str = pass_s2(s2, n);
 	}
