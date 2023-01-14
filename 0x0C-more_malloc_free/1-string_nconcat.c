@@ -18,7 +18,8 @@ void *malloc_checked(unsigned int b)
 	}
 	return (a);
 }
-/**pass_s2 - pass the  string s2 to pointer
+/**
+*pass_s2 - pass the  string s2 to pointer
 *@str2: string to be passed
 *@ln: n bytes of strings to be passed
 *Return: pointer pointing to string s2
@@ -26,8 +27,8 @@ void *malloc_checked(unsigned int b)
 char *pass_s2(char *str2, unsigned int ln)
 {
 	char *strptr;
-	unsigned int l, m ;
-	
+	unsigned int l, m;
+
 	strptr = malloc_checked(sizeof(char) * (ln) + 1);
 	m = strlen(str2);
 	for (l = 0; l < m && l < ln; l++)
@@ -35,7 +36,7 @@ char *pass_s2(char *str2, unsigned int ln)
 		strptr[l] = str2[l];
 	}
 	return (strptr);
-}		
+}
 /**
  * string_nconcat- function that  concatenates two strings
  * @s1:string 1
