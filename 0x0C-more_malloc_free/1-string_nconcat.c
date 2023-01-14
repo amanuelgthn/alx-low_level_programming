@@ -12,8 +12,6 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 
-	char str1[100], str2[100];
-
 	// Declare a new Strings
 	// to store the concatenated String
 	char str3[100];
@@ -22,8 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	// Insert the first string
 	// in the new string
-	while (str1[i] != '\0' && i < n) {
-		str3[j] = str1[i];
+	while (s1[i] != '\0' && i < n) {
+		str3[j] = s1[i];
 		i++;
 		j++;
 	}
@@ -31,8 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	// Insert the second string
 	// in the new string
 	i = 0;
-	while (str2[i] != '\0' && i < n) {
-		str3[j] = str2[i];
+	while (s2[i] != '\0' && i < n) {
+		str3[j] = s2[i];
 		i++;
 		j++;
 	}
