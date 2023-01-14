@@ -15,15 +15,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str3;
 	
 	str3 = malloc[1024];
-	unsigned int i = 0, j = 0
+	unsigned int i = 0, j = 0;
 	while (s1[i] != '\0' && i < n) {
 		str3[j] = s1[i];
 		i++;
 		j++;
 	}
-
-	// Insert the second string
-	// in the new string
 	i = 0;
 	while (s2[i] != '\0' && i < n) {
 		str3[j] = s2[i];
