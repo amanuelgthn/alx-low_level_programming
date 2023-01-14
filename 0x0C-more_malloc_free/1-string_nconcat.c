@@ -49,13 +49,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int i, k, j = 0;
 
-	if (s1 == NULL || s1 == "")
+	i = strlen(s1);
+	if (s1 == NULL || i == 0)
 	{
 		str = pass_s2(s2, n);
 	}
 	else
 	{
-		i = strlen(s1);
 		str = malloc_checked(sizeof(char) * (i + n) + 1);
 	}
 	k = strlen(s1);
