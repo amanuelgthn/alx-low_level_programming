@@ -3,41 +3,6 @@
 #include<string.h>
 #include"main.h"
 /**
- * malloc_checked- function that allocates memory using malloc
- * @b: memory size
- * Return: a pointer to the allocated memory
- **/
-void *malloc_checked(unsigned int b)
-{
-	void *a = malloc(b);
-
-	if (a == NULL)
-	{
-		return (NULL);
-		exit(98);
-	}
-	return (a);
-}
-/**
-*pass_s2 - pass the  string s2 to pointer
-*@str2: string to be passed
-*@ln: n bytes of strings to be passed
-*Return: pointer pointing to string s2
-**/
-char *pass_s2(char *str2, unsigned int ln)
-{
-	char *strptr;
-	unsigned int l, m;
-
-	strptr = malloc_checked(sizeof(char) * (ln) + 1);
-	m = strlen(str2);
-	for (l = 0; l < m && l < ln; l++)
-	{
-		strptr[l] = str2[l];
-	}
-	return (strptr);
-}
-/**
  * string_nconcat- function that  concatenates two strings
  * @s1:string 1
  * @s2:string 2
@@ -46,29 +11,31 @@ char *pass_s2(char *str2, unsigned int ln)
  **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *str;
-	unsigned int i, k, j = 0;
 
-	i = strlen(s1);
-	if (s1 == NULL || i == 0)
-	{
-		str = pass_s2(s2, n);
+	char str1[100], str2[100];
+
+	// Declare a new Strings
+	// to store the concatenated String
+	char str3[100];
+
+	unsigned int i = 0, j = 0;
+
+	// Insert the first string
+	// in the new string
+	while (str1[i] != '\0' && i < n) {
+		str3[j] = str1[i];
+		i++;
+		j++;
 	}
-	else
-	{
-		str = malloc_checked(sizeof(char) * (i + n) + 1);
+
+	// Insert the second string
+	// in the new string
+	i = 0;
+	while (str2[i] != '\0' && i < n) {
+		str3[j] = str2[i];
+		i++;
+		j++;
 	}
-	k = strlen(s1);
-	for (; j < i + n; j++)
-	{
-		if (j < i)
-		{
-			str[j] = s1[j];
-		}
-		else if (j <= k + i)
-		{
-			str[j] = s2[j - i];
-		}
-	}
-	return (str);
+	str3[j] = '\0';
+	return (str3);
 }
