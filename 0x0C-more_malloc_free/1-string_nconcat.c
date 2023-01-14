@@ -28,9 +28,9 @@ char *pass_s2(char *str2, unsigned int ln)
 	char *strptr;
 	unsigned int l, m ;
 	
-	strptr = malloc_checked(sizeof(char) * (n) + 1);
+	strptr = malloc_checked(sizeof(char) * (ln) + 1);
 	m = strlen(str2);
-	for (l = 0; l < m && l < n; l++)
+	for (l = 0; l < m && l < ln; l++)
 	{
 		strptr[l] = str2[l];
 	}
