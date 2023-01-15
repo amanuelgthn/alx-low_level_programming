@@ -28,6 +28,7 @@ char *pass_s2(char *str2, unsigned int ln)
 	{
 		strptr[l] = str2[l];
 	}
+	free(strptr);
 	return (strptr);
 }
 /**pass_s1 - pass the  string s2 to pointer
@@ -45,6 +46,7 @@ char *pass_s1(char *str1)
 	{
 		strptr1[m1] = str1[m1];
 	}
+	free(strptr1);
 	return (strptr1);
 }		
 /**
