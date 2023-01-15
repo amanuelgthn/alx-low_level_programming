@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include<string.h>
 #include<stdlib.h>
+/**
+ * malloc_checked- function that allocates memory using malloc
+ * @b: memory size
+ * Return: a pointer to the allocated memory
+ **/
 void *malloc_checked(unsigned int b)
 {
 	void *a = malloc(b);
@@ -13,7 +18,7 @@ void *malloc_checked(unsigned int b)
 	return (a);
 }
 /**
-*pass_s2 - pass the  string s2 to pointer
+*pass_s2- pass the  string s2 to pointer
 *@str2: string to be passed
 *@ln: n bytes of strings to be passed
 *Return: pointer pointing to string s2
@@ -33,7 +38,7 @@ char *pass_s2(char *str2, unsigned int ln)
 	return (strptr);
 }
 /**
-*pass_s1 - pass the  string s2 to pointer
+*pass_s1- pass the  string s2 to pointer
 *@str1: string to be passed
 *Return: pointer pointing to string s2
 **/
