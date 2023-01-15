@@ -12,7 +12,8 @@ void *malloc_checked(unsigned int b)
 	}
 	return (a);
 }
-/**pass_s2 - pass the  string s2 to pointer
+/**
+*pass_s2 - pass the  string s2 to pointer
 *@str2: string to be passed
 *@ln: n bytes of strings to be passed
 *Return: pointer pointing to string s2
@@ -20,7 +21,7 @@ void *malloc_checked(unsigned int b)
 char *pass_s2(char *str2, unsigned int ln)
 {
 	char *strptr;
-	unsigned int l, m ;
+	unsigned int l, m;
 	
 	strptr = malloc_checked(sizeof(char) * (ln) + 1);
 	m = strlen(str2);
@@ -31,16 +32,17 @@ char *pass_s2(char *str2, unsigned int ln)
 	free(strptr);
 	return (strptr);
 }
-/**pass_s1 - pass the  string s2 to pointer
+/**
+*pass_s1 - pass the  string s2 to pointer
 *@str1: string to be passed
 *Return: pointer pointing to string s2
 **/
 char *pass_s1(char *str1)
 {
 	char *strptr1;
-	unsigned int l1, m1 ;
+	unsigned int l1, m1;
 
-  l1=strlen(str1);
+	l1=strlen(str1);
 	strptr1 = malloc_checked(sizeof(char) * (l1) + 1);
 	for (m1 = 0; m1 < l1;m1++)
 	{
@@ -61,15 +63,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int i, k, j = 0;
 
-	if (s1==NULL && s2==NULL)
+	if (s1 == NULL && s2 == NULL)
   {
-    str=malloc_checked(sizeof(char) * (n) + 1);
-    str[0]='\0';
-    return(str);
+    str = malloc_checked(sizeof(char) * (n) + 1);
+    str[0] = '\0';
+    return (str);
     }
-  else if (s1 == NULL || s1[0]=='\0')
+  else if (s1 == NULL || s1[0] == '\0')
 	{
-		str = pass_s2(s2,n);
+		str = pass_s2(s2, n);
 	}
 	else if (s2 == NULL || s2[0]=='\0')
   {
