@@ -50,7 +50,7 @@ char *pass_s1(char *str1)
 	}
 	free(strptr1);
 	return (strptr1);
-}	
+}
 /**
  * string_nconcat- function that  concatenates two strings
  * @s1:string 1
@@ -73,7 +73,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		str = pass_s2(s2, n);
 	}
-	else if (s2 == NULL || s2[0]=='\0')
+	else if (s2 == NULL || s2[0] == '\0')
 	{
 		str = pass_s1(s1);
 	}
