@@ -10,7 +10,7 @@
  **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t newdog;
+	dog_t *newdog;
 	
 	if (newdog == NULL)
 	{
