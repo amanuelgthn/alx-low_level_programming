@@ -27,8 +27,8 @@ void free_dog(dog_t *d)
 		free(d);
 		return (NULL);
 	}
-	newdog->owner = malloc(lenowner + 1);
-	if (newdog->owner == NULL)
+	d->owner = malloc(lenowner + 1);
+	if (d->owner == NULL)
 	{
 		free(d->owner);
 		free(d->name);
