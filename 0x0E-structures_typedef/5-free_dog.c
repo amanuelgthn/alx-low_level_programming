@@ -9,11 +9,6 @@
  **/
 void free_dog(dog_t *d)
 {
-	int lenowner;
-	int lenname;
-
-	lenowner = strlen(d->owner);
-	lenname = strlen(d->name);
 	if (d == NULL)
 	{
 		free(d);
@@ -23,7 +18,6 @@ void free_dog(dog_t *d)
 		free(d->name);
 		free(d);
 	}
-	d->owner = malloc(lenowner + 1);
 	if (d->owner == NULL)
 	{
 		free(d->owner);
