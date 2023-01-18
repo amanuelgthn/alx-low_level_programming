@@ -14,12 +14,10 @@ void free_dog(dog_t *d)
 
 	lenowner = strlen(d->owner);
 	lenname = strlen(d->name);
-	d= malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
 		free(d);
 	}
-	d->name = malloc(lenname + 1);
 	if (d->name == NULL)
 	{
 		free(d->name);
