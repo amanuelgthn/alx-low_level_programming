@@ -3,49 +3,37 @@
 #include<string.h>
 #include"dog.h"
 /**
- * new_dog- new struct of dog_t type named new dog
- * @name:name of the new dog
- * @age: age of the new dog
- * @owner:owner of the new dog
- * Return: new dog
+ * free_dog- free dog struct
+ * @d:name of the new dog
+ * Return:d
  **/
-dog_t *new_dog(char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-	dog_t *newdog;
 	int lenowner;
 	int lenname;
 
 	lenowner = strlen(owner);
 	lenname = strlen(name);
-	newdog = malloc(sizeof(dog_t));
-	if (newdog == NULL)
+	d= malloc(sizeof(dog_t));
+	if (d == NULL)
 	{
-		free(newdog);
+		free(d);
 		return (NULL);
 	}
-	newdog->name = malloc(lenname + 1);
-	if (newdog->name == NULL)
+	d->name = malloc(lenname + 1);
+	if (d->name == NULL)
 	{
-		free(newdog->name);
-		free(newdog);
+		free(d->name);
+		free(d);
 		return (NULL);
-	}
-	else
-	{
-		strcpy(newdog->name, name);
 	}
 	newdog->owner = malloc(lenowner + 1);
 	if (newdog->owner == NULL)
 	{
-		free(newdog->owner);
-		free(newdog->name);
-		free(newdog);
+		free(d->owner);
+		free(d->name);
+		free(d);
 		return (NULL);
 	}
-	else
-	{
-		strcpy(newdog->owner, owner);
-	}
-	newdog->age = age;
-	return (newdog);
+	return (d);
 }
