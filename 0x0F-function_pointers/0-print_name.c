@@ -9,8 +9,14 @@
 **/
 void f(char d)
 {
-	putchar(d);
-	putchar('\n');
+	int i;
+	
+	for (i = 0; d[[i] != '\0'; i++)
+		      {
+			      putchar(d);
+			      
+		      }
+		      putchar('\n');
 }
 	
 void print_name(char *name, void (*f)(char *))
