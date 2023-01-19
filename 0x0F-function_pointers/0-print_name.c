@@ -3,7 +3,7 @@
 #include<string.h>
 #include"function_pointers.h"
 /**
-*f-function to print name
+*f-function to print name given
 *@d:name to be printed
 **/
 void f(char *d)
