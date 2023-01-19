@@ -9,8 +9,8 @@
 **/
 void f(char d)
 {
-	_putchar(d);
-	_putchar('\n');
+	putchar(d);
+	putchar('\n');
 }
 	
 void print_name(char *name, void (*f)(char *))
