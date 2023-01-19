@@ -37,7 +37,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			}
 			else
 			{
-				first_digit(array[i]);
+				return (first_digit(array[i]));
 			}
 				
 		}
