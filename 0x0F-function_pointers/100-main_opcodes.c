@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i = 0, j;
+	
 	if (argc < 2)
 	{
 		printf("Error\n");
@@ -20,10 +21,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	for(; i < j; j++)
+	for (; i < j; j++)
 	{
 		printf("%02hhx", *((char *)main + i));
-		if (i < j -1)
+		if (i < j - 1)
 		{
 			printf(" ");
 		}
@@ -33,4 +34,4 @@ int main(int argc, char *argv[])
 		}
 	}
 	return (0);
-}		
+}
