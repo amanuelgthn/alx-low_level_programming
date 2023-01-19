@@ -1,2 +1,2 @@
-#!/bin/basg
+#!/bin/bash
 "Variadic function\n"
