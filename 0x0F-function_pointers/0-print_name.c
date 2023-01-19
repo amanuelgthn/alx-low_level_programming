@@ -9,12 +9,7 @@
 **/
 void f(char *d)
 {
-	int i = 0;
-	
-	for(;d[i] !='\0';i++)
-	{
-		_putchar(d[i]);
-	}
+	_putchar(d);
 	_putchar('\n');
 }
 	
