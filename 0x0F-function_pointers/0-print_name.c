@@ -7,16 +7,15 @@
 *@name:name to be printed
 *f-function pointer to print_name
 **/
-void f(char d)
+void f(char *d)
 {
 	int i;
 	
-	for (i = 0; d[[i] != '\0'; i++)
-		      {
-			      putchar(d);
-			      
-		      }
-		      putchar('\n');
+	for (i = 0;d[i] != '\0';i++)
+	{
+		putchar(d[i]);
+	}
+	putchar('\n');
 }
 	
 void print_name(char *name, void (*f)(char *))
