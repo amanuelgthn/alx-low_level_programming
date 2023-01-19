@@ -36,7 +36,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return(i);
 				break;
 			}
-			if (cmp(array[i]) <=0 && i=size-1)
+			if (cmp(array[i]) <=0 && i == size-1)
 			{
 				return(-1);
 			}
