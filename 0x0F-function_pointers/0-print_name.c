@@ -7,7 +7,7 @@
 *@name:name to be printed
 *f-function pointer to print_name
 **/
-void f(char *d)
+void f(char d)
 {
 	_putchar(d);
 	_putchar('\n');
