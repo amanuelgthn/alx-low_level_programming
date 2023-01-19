@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include"function_pointers.h"
-int first_digit(n)
+int first_digit(int n)
 {
 	int first;
 	
