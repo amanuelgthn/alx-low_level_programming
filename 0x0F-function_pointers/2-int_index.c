@@ -21,7 +21,7 @@ int first_digit(int n)
 **/
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i = 0, j;
+	int i = 0;
 
 	if(size <= 0)
 	{
@@ -36,6 +36,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return(i);
 				break;
 			}
+			if (cmp(array[i]) <=0 && i=size-1)
+			{
+				return(-1);
+			}
 		}
+		
 	}
 }
