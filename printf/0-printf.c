@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdarg.h>
 #include<stdlib.h>
-#inculde<stdlib.h>
+#include<stdlib.h>
 void _printf(char* format, ...)
 {
 	char *traverse;
