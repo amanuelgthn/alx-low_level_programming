@@ -7,6 +7,7 @@ struct node
 }node;
 int main()
 {
+	node head;
 	node *head = NULL;
 	head = malloc(sizeof(node));
 	head->data = 45;
