@@ -4,11 +4,11 @@ struct node
 {
 	int data;
 	struct node *link;
-}node;
+}n
+;
 int main()
 {
-	node head;
-	node *head = NULL;
+	struct node *head = NULL;
 	head = malloc(sizeof(node));
 	head->data = 45;
 	head->link = NULL;
