@@ -21,7 +21,6 @@ size_t print_list(const list_t *h)
 		}
 		current_node = current_node->next;
 		count = count +1;
-		}
 	}
 	return (count);
 }
