@@ -7,10 +7,12 @@ size_t print_list(const list_t *h)
 {
 	const list_t *current_node = h;
 	int count = 0;
+	int i = 0;
 
 	while(current_node != NULL)
 	{
 		printf("%s", current_node->str);
+		current_node = current_node->next;
 		count = count +1;
 	}
 	return (count);
