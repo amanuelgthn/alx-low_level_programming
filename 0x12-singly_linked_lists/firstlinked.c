@@ -12,7 +12,7 @@ int main()
 	head->data = 45;
 	head->link = NULL;
 	printf("%d\n",head->data);
-	printf("%d\n",*head);
-	printf("%d\n",head->link);
+	printf("%p\n",*head);
+	printf("%p\n",head->link);
 	return 0;
 }
