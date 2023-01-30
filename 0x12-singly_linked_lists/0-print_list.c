@@ -15,8 +15,15 @@ size_t print_list(const list_t *h)
 	while(current_node != NULL)
 	{
 		printf("%s\n", current_node->str);
-		current_node = current_node->next;
-		count = count +1;
+		if(current_node->next == NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+			current_node = current_node->next;
+			count = count +1;
+		}
 	}
 	return (count);
 }
