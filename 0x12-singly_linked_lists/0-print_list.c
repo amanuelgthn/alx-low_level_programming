@@ -18,8 +18,6 @@ size_t print_list(const list_t *h)
 		if(current_node->next == NULL)
 		{
 			printf("[0] (nil)\n");
-			return (0);
-			break;
 		}
 		else
 		{
