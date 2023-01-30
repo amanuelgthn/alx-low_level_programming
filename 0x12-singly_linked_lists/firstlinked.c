@@ -12,7 +12,6 @@ int main()
 	head->data = 45;
 	head->link = NULL;
 	printf("%d\n",head->data);
-	printf("%p\n",*head);
 	printf("%p\n",head->link);
 	return 0;
 }
