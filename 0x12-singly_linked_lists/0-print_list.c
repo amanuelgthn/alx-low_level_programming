@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 
 	while(current_node != NULL)
 	{
-		printf("%s", current_node->str);
+		printf("%s\n", current_node->str);
 		current_node = current_node->next;
 		count = count +1;
 	}
