@@ -1,6 +1,6 @@
 #include"lists.h"
 /**
-*print_list-print all the elements of a list and return number if nodes
+*print_listint-print all the elements of a list and return number if nodes
 *@h:constant singly linked list
 *Return:number of nodes
 **/
