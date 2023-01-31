@@ -18,6 +18,6 @@ size_t list_len(const list_t *h)
 		current_node = current_node->next;
 		count = count + 1;
 	}
-	return (printf("%d",count));
+	return count);
 	;
 }
