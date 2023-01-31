@@ -19,5 +19,5 @@ size_t list_len(const list_t *h)
 		count = count + 1;
 	}
 	printf("%d",count);
-	return (count);
+	return;
 }
