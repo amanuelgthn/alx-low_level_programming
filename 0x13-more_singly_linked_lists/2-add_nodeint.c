@@ -7,12 +7,9 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	const listint_t *new_node = h;
-	new_node->;
-
-	while (current_node)
-	{
-		current_node = current_node->next;
-		count = count + 1;
-	}
-	return (count);
+	new_node = malloc(sizeof(listint_t));
+	head = new_node;
+	new_node->n = n;
+	new_node->next = NULL;
+	return (head);
 }
