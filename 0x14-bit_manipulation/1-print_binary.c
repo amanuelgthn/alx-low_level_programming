@@ -1,5 +1,5 @@
 #include"main.h"
-unsigned long int pow_recur(unsigned long int x,unsigned long int y)
+int pow_recur(int x,int y)
 {
 	if (y == 0)
 	{
@@ -14,7 +14,7 @@ unsigned long int pow_recur(unsigned long int x,unsigned long int y)
 		return (x * pow_recur(x, y - 1));
 	}
 }
-unsigned long int findpower(unsigned long int n, unsigned long int k)
+int findpower(int n, int k)
 {
 	if (n < (pow_recur(2, k)))
 	{
