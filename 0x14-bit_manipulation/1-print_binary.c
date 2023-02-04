@@ -16,15 +16,13 @@ unsigned long int pow_recur(unsigned long int x,unsigned long int y)
 }
 unsigned long int findpower(unsigned long int n, unsigned long int k)
 {
-	unsigned long int i = 0;
-	
-	if (n < (pow_recur(2, i)))
+	if (n < (pow_recur(2, k)))
 	{
-		return (findpower(n, i + 1));
+		return (findpower(n, k + 1));
 	}
 	else
 	{
-		return (i - 1);
+		return (k - 1);
 	}
 }	
 /*
