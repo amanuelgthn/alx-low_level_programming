@@ -47,7 +47,7 @@ void print_binary(unsigned long int n)
 		for(i=j; i >= 0; --i)
 		{
 			k=pow_recur(2,i);
-			if(n >= k)
+			if(n > k)
 			{
 				printf("1");
 				n = n - k;
