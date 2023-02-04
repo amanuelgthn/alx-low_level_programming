@@ -6,4 +6,6 @@
 unsigned int binary_to_uint(const char *b);
 int _pow_recursion(int x, int y);
 int _strlen(const char *s);
+unsigned long int pow(unsigned long int x,unsigned long int y);
+unsigned long int findpower(unsigned long int n, unsigned long int k);
 #endif /* _MAIN_ */
