@@ -16,7 +16,7 @@ int pow_recur(int x,int y)
 }
 int findpower(int n, int k)
 {
-	if (n < (pow_recur(2, k)))
+	if (n > (pow_recur(2, k)))
 	{
 		return (findpower(n, k + 1));
 	}
