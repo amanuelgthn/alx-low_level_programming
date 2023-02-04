@@ -31,7 +31,7 @@ int findpower(int n, int k)
 **/
 void print_binary(unsigned long int n)
 {
-	unsigned long int i, j;
+	unsigned long int i, j, k;
 	
 	if (n == 0)
 	{
@@ -46,10 +46,11 @@ void print_binary(unsigned long int n)
 		j = findpower(n,0);
 		for(i=j; i > 0; --i)
 		{
-			if(n >= pow_recur(2,i))
+			k=pow_recur(2,i);
+			if(n >= k)
 			{
 				printf("1");
-				n = n - pow_recur(2,i);
+				n = n - k;
 			}
 			else
 			{
