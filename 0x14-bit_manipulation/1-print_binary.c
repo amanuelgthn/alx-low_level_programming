@@ -45,7 +45,7 @@ void print_binary(unsigned long int n)
 	}
 	else
 	{
-		j = findpower(n);
+		j = findpower(n,0);
 		for(i=j; i > 0; i--)
 		{
 			if(n >= pow_recur(2,i))
