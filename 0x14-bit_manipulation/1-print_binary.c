@@ -35,16 +35,16 @@ void print_binary(unsigned long int n)
 	
 	if (n == 0)
 	{
-		printf("0\n");
+		printf("0");
 	}
 	else if (n == 1)
 	{
-		printf("1\n");
+		printf("1");
 	}
 	else
 	{
 		j = findpower(n,0);
-		for(i=j; i > 0; i--)
+		for(i=j; i > 0; --i)
 		{
 			if(n >= pow_recur(2,i))
 			{
