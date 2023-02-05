@@ -1,4 +1,4 @@
-#include"main.h"	
+#include"main.h"
 /*
 *print_binary- covert integer to binary and print result
 *@n:integer
