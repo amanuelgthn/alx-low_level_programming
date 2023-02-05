@@ -9,7 +9,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	int k, j;
 	
 	k = n >> index;
-	if (index =='\0')
+	if (index > 63)
 	{
 		j = -1;
 	}
