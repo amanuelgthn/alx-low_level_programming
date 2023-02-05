@@ -31,31 +31,17 @@ int findpower(int n, int k)
 **/
 void print_binary(unsigned long int n)
 {
-	unsigned long int i, j, k;
-	
-	if (n == 0)
+	int i = findpower(n,0),k;
+	for (; i >= 0; i--)
 	{
-		printf("0");
-	}
-	else if (n == 1)
-	{
-		printf("1");
-	}
-	else
-	{
-		j = findpower(n,0);
-		for(i=j; i > 0; --i)
+		k = n >> i;
+		if (k & 1)
 		{
-			k=pow_recur(2,i);
-			if(n > k)
-			{
-				printf("1");
-				n = n - k;
-			}
-			else
-			{
-				printf("0");
-			}
+			printf("1");
+		}
+		else
+		{
+			printf("0");
 		}
 	}
-}
+}		
