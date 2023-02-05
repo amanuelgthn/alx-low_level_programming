@@ -9,7 +9,11 @@ int get_bit(unsigned long int n, unsigned int index)
 	int k, j;
 	
 	k = n >> index;
-	if (k & 1)
+	if (k = '\0')
+	{
+		j = -1;
+	}
+	else if (k & 1)
 	{
 		j = 1;
 	}
