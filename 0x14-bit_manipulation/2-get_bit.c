@@ -5,15 +5,16 @@
 **/
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int k;
+	int k, j;
 	
 	k = n >> index;
 	if (k & 1)
 	{
-		printf("1");
+		j = 1;
 	}
 	else
 	{
-		printf("0");
+		j = 0;
 	}
+	return (j);
 }
