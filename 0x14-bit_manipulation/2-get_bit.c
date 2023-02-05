@@ -1,7 +1,8 @@
 #include"main.h"	
 /**
-*get_bit-covert integer to binary and print result
+*get_bit-function to get the bit of a binary at a given index
 *@n:integer
+*@index:index of the binary to be returned
 **/
 int get_bit(unsigned long int n, unsigned int index)
 {
