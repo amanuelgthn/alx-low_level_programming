@@ -1,5 +1,5 @@
 #include"main.h"
-/*
+/**
 * print_binary - function that convert integer to binary and print result
 *@n:integer
 **/
