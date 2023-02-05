@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		j = -1;
 	}
-	esle if (k & 1)
+	else if (k & 1)
 	{
 		j = 1;
 	}
