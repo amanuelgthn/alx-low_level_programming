@@ -1,6 +1,6 @@
 #include"main.h"
 /*
-*print_binary- covert integer to binary and print result
+*print_binary - function that convert integer to binary and print result
 *@n:integer
 **/
 void print_binary(unsigned long int n)
