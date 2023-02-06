@@ -5,7 +5,7 @@
 *@index:index of the binary to be returned
 *Return:the bit of a binary at a given index or -1 if out of index
 **/
-int get_bit(unsigned long int *n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	int k, j;
 
