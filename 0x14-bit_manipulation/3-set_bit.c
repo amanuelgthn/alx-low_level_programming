@@ -7,7 +7,7 @@
 **/
 int set_bit(unsigned long int n, unsigned int index)
 {
-	int k;
+	unsigned long int k;
 
 	k = n >> index;
 	if (index > 63)
