@@ -10,5 +10,5 @@ int pow_recur(int x,int y);
 int findpower(int n, int k);
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
-int set_bit(unsigned long int *n, unsigned int index);
+int set_bit(unsigned long int n, unsigned int index);
 #endif /* _MAIN_ */
