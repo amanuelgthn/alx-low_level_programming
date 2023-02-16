@@ -9,6 +9,8 @@
 int main(int ac, char *argv[])
 {
 	int i = 0;
+	
+	void(argc);
 	while(i)
 	{
 		if(argv[i]==NULL)
