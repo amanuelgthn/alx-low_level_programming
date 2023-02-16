@@ -10,7 +10,7 @@ int main(int ac, char *argv[])
 {
 	int i = 0;
 	
-	void(argc);
+	void(ac);
 	while(i)
 	{
 		if(argv[i]==NULL)
