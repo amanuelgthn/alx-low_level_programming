@@ -9,10 +9,17 @@
 int main(int ac, char *argv[])
 {
 	int i = 0;
-	while(argv[i]!='\0')
+	while(i)
 	{
-		printf("%s\n", argv[i]);
-		i++;
+		if(argv[i]=='\0')
+		{
+			break;
+		}
+		else
+		{
+			printf("%s\n", argv[i]);
+			i++;
+		}
 	}
 	return (0);
 }
