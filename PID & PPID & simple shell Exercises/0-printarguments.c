@@ -6,11 +6,11 @@
  *@argv:arguments
  *Return: 0 success
  **/
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(__attribute__((unused)) int ac, char *argv[])
 {
 	int i = 0;
 	
-	while(ac)
+	while(i)
 	{
 		if(argv[i]==NULL)
 		{
