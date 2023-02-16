@@ -8,7 +8,7 @@
  **/
 int main(int argc__attribute__((unused)), char *argv[])
 {
-	int i = 0,
+	int i = 0;
 	while(argv[i]!='\0')
 	{
 		printf("%s\n", argv[i]);
