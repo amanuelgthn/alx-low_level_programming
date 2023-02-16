@@ -11,7 +11,7 @@ int main(int ac, char *argv[])
 	int i = 0;
 	while(i)
 	{
-		if(argv[i]=='\0')
+		if(argv[i]==NULL)
 		{
 			break;
 		}
