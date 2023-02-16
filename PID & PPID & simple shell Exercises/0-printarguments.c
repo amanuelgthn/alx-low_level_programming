@@ -10,8 +10,7 @@ int main(int ac__attribute__((unused)), char *argv[])
 {
 	int i = 0;
 	
-	void(ac);
-	while(i)
+	while(ac)
 	{
 		if(argv[i]==NULL)
 		{
