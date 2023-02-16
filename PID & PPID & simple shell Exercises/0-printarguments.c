@@ -6,7 +6,7 @@
  *@argv:arguments
  *Return: 0 success
  **/
-int main(int ac__attribute__((unused)), char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int i = 0;
 	
