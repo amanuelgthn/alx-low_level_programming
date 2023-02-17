@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<string.h>
 /**
  *main- prints all arguments it recieves without using ac
@@ -6,21 +7,4 @@
  *@argv:arguments
  *Return: 0 success
  **/
-int main(__attribute__((unused)) int ac, char *argv[])
-{
-	int i = 0;
-	
-	while(i)
-	{
-		if(argv[i]==NULL)
-		{
-			break;
-		}
-		else
-		{
-			printf("%s\n", argv[i]);
-			i++;
-		}
-	}
-	return (0);
-}
+int main()
