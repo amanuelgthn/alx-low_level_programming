@@ -10,17 +10,10 @@ int main(__attribute__((unused)) int ac, char *argv[])
 {
 	int i = 0;
 	
-	while(i)
+	while(argv[i]!=NULL)
 	{
-		if(argv[i]==NULL)
-		{
-			break;
-		}
-		else
-		{
-			printf("%s\n", argv[i]);
-			i++;
-		}
+		printf("%s\n", argv[i]);
+		i++;
 	}
 	return (0);
 }
