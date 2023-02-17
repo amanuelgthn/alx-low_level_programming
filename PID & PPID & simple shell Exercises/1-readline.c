@@ -17,9 +17,9 @@ int main()
 	{
 		exit(1);
 	}
-	characters = getline(&buffer, &bufsize, stdin);
 	printf("$ \n");
-	printf("%zu", characters);
+	characters = getline(&buffer, &bufsize, stdin);
+	printf("%u", characters);
 	printf("%s\n", buffer);
 	return(0);
 }
