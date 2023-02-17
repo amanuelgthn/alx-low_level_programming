@@ -20,6 +20,6 @@ int main()
 	printf("$ \n");
 	characters = getline(&buffer, &bufsize, stdin);
 	printf("%lu", characters);
-	printf("%s\n", buffer);
+	printf("%s", buffer);
 	return(0);
 }
