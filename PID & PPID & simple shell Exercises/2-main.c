@@ -7,6 +7,7 @@ int main()
 	while(str_token!=NULL)
 	{
 	    printf( " %s\n", str_token );
+	    str_token = NULL;
 	 }
 	return(0);
 }
