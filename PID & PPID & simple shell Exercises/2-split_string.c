@@ -20,7 +20,5 @@ int main ()
    while( token != NULL )
    {
       printf( " %s\n", token );
-    
-      token = strtok(NULL, s);
    }
 }
