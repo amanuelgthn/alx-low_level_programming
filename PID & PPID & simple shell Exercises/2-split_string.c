@@ -7,7 +7,7 @@
  *@argv:arguments
  *Return: 0 success
  **/
-char split_str(char str)
+char *split_str(char *str)
 {
    const char s[2] = "-";
    char *token;
