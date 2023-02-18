@@ -17,7 +17,7 @@ char *split_str(char *str)
    /* walk through other tokens */
    while( str_token !=NULL)
    {
-      str_token[i]=strtok(NULL, " ");
+      str_token[++i]=strtok(NULL, " ");
    }
    return(*str_token);
 }
