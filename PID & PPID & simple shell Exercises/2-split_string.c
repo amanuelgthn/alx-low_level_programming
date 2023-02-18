@@ -10,7 +10,7 @@ char *split_str(char *str)
 {
    int i = 0;
    char *token;
-   char *str_token[5];
+   char *str_token[10];
    
    /* get the first token */
    token = strtok(str, " ");
