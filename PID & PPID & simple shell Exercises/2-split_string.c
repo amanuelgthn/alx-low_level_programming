@@ -7,7 +7,8 @@
  *@argv:arguments
  *Return: 0 success
  **/
-int main () {
+int main ()
+{
    char str[80] = "This is - www.tutorialspoint.com - website";
    const char s[2] = "-";
    char *token;
@@ -16,8 +17,10 @@ int main () {
    token = strtok(str, s);
    
    /* walk through other tokens */
-   while( token != NULL ) {
+   while( token != NULL )
+   {
       printf( " %s\n", token );
     
       token = strtok(NULL, s);
    }
+}
