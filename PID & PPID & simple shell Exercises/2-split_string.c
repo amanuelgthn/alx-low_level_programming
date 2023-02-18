@@ -12,7 +12,7 @@ char *split_str(char *str)
    int i = 0;
    const char s[2] = "-";
    char *token;
-   char str_token[5];
+   char *str_token[5];
    
    /* get the first token */
    token = strtok(str, s);
