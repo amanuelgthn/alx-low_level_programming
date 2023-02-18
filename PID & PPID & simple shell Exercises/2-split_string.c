@@ -8,19 +8,16 @@
  **/
 char *split_str(char *str)
 {
-   char *token;
    char *str_token[10];
    int i = 0;
    
    /* get the first token */
-   token = strtok(str, " ");
+  str_token[i] = strtok(str, " ");
    
    /* walk through other tokens */
-   while( token != NULL )
+   while( str_token !=NULL)
    {
-      str_token[i++]=token;
-      printf("%s\n",token);
-      token = strtok(NULL, " ");
+      str_token[i]=strtok(NULL, " ");
    }
    return(*str_token);
 }
