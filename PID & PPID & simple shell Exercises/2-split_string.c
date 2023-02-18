@@ -20,7 +20,10 @@ char *split_str(char *str)
    /* walk through other tokens */
    while( token != NULL )
    {
-      str_token[i]=token;
+      if(token!=NULL)
+      {
+         str_token[i]=token;
+      }
       token = strtok(NULL, s);
       i++;
    }
