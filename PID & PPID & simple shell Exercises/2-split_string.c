@@ -8,7 +8,7 @@
  **/
 char *split_str(char *str)
 {
-   char *str_token[10];
+   char *str_token[20];
    int i = 0;
    
    /* get the first token */
