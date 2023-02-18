@@ -8,7 +8,6 @@
  **/
 char *split_str(char *str)
 {
-   int i = 0;
    char *token;
    char *str_token[10];
    
@@ -18,9 +17,8 @@ char *split_str(char *str)
    /* walk through other tokens */
    while( token != NULL )
    {
-      str_token[i]=token;
+      str_token=token;
       token = strtok(NULL, " ");
-      i++;
    }
    return(*str_token);
 }
