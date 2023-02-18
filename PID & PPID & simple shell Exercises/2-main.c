@@ -1,7 +1,6 @@
 #include"main.h"
 int main()
 {
-	int i = 0;
 	char *str_token;
 	char str[80] = "This is www tutorialspoint com website";
 	str_token = split_str(str);
