@@ -19,6 +19,7 @@ char *split_str(char *str)
    while( token != NULL )
    {
       str_token[i++]=token;
+      printf("%s\n",token);
       token = strtok(NULL, " ");
    }
    return(*str_token);
