@@ -11,6 +11,7 @@ char *split_str(char *str)
 {
    const char s[2] = "-";
    char *token;
+   char str_token[];
    
    /* get the first token */
    token = strtok(str, s);
@@ -18,8 +19,9 @@ char *split_str(char *str)
    /* walk through other tokens */
    while( token != NULL )
    {
-      printf( " %s\n", token );
+      str_token[i]=token;
       token = strtok(NULL, s);
+      i++;
    }
-   return(token);
+   return(str_token);
 }
