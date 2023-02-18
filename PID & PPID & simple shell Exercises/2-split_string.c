@@ -7,9 +7,8 @@
  *@argv:arguments
  *Return: 0 success
  **/
-int main ()
+char split_str(char str)
 {
-   char str[80] = "This is - www.tutorialspoint.com - website";
    const char s[2] = "-";
    char *token;
    
@@ -22,4 +21,5 @@ int main ()
       printf( " %s\n", token );
       token = strtok(NULL, s);
    }
+   return(token);
 }
