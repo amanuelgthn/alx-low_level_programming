@@ -24,5 +24,5 @@ char **split_str(char *str)
       token = strtok(NULL, s);
       i++;
    }
-   return(str_token);
+   return(*str_token);
 }
