@@ -9,7 +9,7 @@
 char *split_str(char *str)
 {
    int i = 0;
-   const char s[2] = " ";
+   const char s[1] = " ";
    char *token;
    char *str_token[5];
    
