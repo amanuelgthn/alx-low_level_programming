@@ -2,15 +2,14 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- *main- prints all arguments it recieves without using ac
- *@ac:number of arguments
- *@argv:arguments
- *Return: 0 success
+ *split_str- splits the string and return the array of each word separated
+ *@str:string to be separated
+ *Return:return the array of each word separted
  **/
 char *split_str(char *str)
 {
    int i = 0;
-   const char s[2] = "-";
+   const char s[2] = " ";
    char *token;
    char *str_token[5];
    
