@@ -7,7 +7,7 @@ int main()
 	str_token = split_str(str);
 	while(str_token!=NULL)
 	{
-	    printf( " %s\n", str_token + i);
+	    printf( " %s\n", str_token);
 	    str_token = NULL;
 	 }
 	return(0);
