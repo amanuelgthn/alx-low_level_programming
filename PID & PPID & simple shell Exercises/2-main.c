@@ -1,12 +1,13 @@
 #include"main.h"
 int main()
 {
+	int i = 0;
 	char *str_token;
 	char str[80] = "This is www tutorialspoint com website";
 	str_token = split_str(str);
 	while(str_token!=NULL)
 	{
-	    printf( " %s\n", str_token );
+	    printf( " %s\n", str_token + i);
 	    str_token = NULL;
 	 }
 	return(0);
