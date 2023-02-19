@@ -8,8 +8,9 @@
  **/
 char *split_str(char *str)
 {
-   char *str_token;
    int i = 0;
+   int j = strlen(str);
+   char *str_token[j];
    
    /* get the first token */
   str_token[i] = strtok(str, " ");
