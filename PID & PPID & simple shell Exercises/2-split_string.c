@@ -9,6 +9,7 @@
 char **split_str(char *str)
 {
 	int i = 0;
+	int *words = 0;
 	char *piece, **str_arr, *str_cpy = NULL;
 	
 	if (str == NULL)
