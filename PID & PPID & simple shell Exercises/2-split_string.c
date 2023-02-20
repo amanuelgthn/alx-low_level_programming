@@ -8,17 +8,43 @@
  **/
 char *split_str(char *str)
 {
-   int i = 0;
-   int j = strlen(str);
-   char *str_token[j];
-   
-   /* get the first token */
-  str_token[i] = strtok(str, " ");
-   
-   /* walk through other tokens */
-   while( str_token !=NULL)
-   {
-      str_token[++i]=strtok(NULL, " ");
-   }
-   return(*str_token);
+	int i = 0;
+	char *piece, **str_arr, *str_cpy = NULL;
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	str_cpy = strdup(str);
+	piece = strtok(str_cpy, " ");
+	{
+		while(piece!=NULL)
+		{
+			if((*piece) == '\n')
+			{
+				piece = strtok(NULL, " ");
+				continue;
+			}
+			(*words)++;
+			piece = strtok(NULL. " ");
+		}
+	}
+	str_arr= (char**)malloc(sizeof(char*)*(*words));
+	piece =strtok(str, " ");
+	for (i = 0; piece!=NULL;i++)
+	{
+		if (*piece) == '\n')
+		{
+			piece = strtok(NULL, " ");
+			continue;
+		}
+		str_arr[i]=(char*)malloc(sizeof(char)*(strlen(piece)+1));
+		strcpy(str_arr[i],piece);
+		piece = strtok(NULL, " ");
+	}
+	if(str_cpy)
+	{
+		free(str_cpy);
+	}
+	return(str_arr);
 }
