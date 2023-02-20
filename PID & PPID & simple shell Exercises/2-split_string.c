@@ -21,12 +21,12 @@ char **split_str(char *str)
 	{
 		while(piece!=NULL)
 		{
-			if((*piece) == '\n')
+			if(*piece == '\n')
 			{
 				piece = strtok(NULL, " ");
 				continue;
 			}
-			(*words)++;
+			*words++;
 			piece = strtok(NULL, " ");
 		}
 	}
@@ -34,7 +34,7 @@ char **split_str(char *str)
 	piece =strtok(str, " ");
 	for (i = 0; piece!=NULL; i++)
 	{
-		if (*piece) == '\n')
+		if (*piece == '\n')
 		{
 			piece = strtok(NULL, " ");
 			continue;
