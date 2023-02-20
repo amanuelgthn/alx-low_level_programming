@@ -8,6 +8,6 @@ int main ()
 	nwords=sizeof(*arr)/sizeof(arr[0]);
 	for (int i = 0; i < nwords; i++)
 	{
-		printf ("word %d: %s\n", i, arr[i]);
+		printf ("word %d: %d\n", i, arr[i]);
 	}
 }
