@@ -27,12 +27,12 @@ char **split_str(char *str)
 				continue;
 			}
 			(*words)++;
-			piece = strtok(NULL. " ");
+			piece = strtok(NULL, " ");
 		}
 	}
 	str_arr= (char**)malloc(sizeof(char*)*(*words));
 	piece =strtok(str, " ");
-	for (i = 0; piece!=NULL;i++)
+	for (i = 0; piece!=NULL; i++)
 	{
 		if (*piece) == '\n')
 		{
