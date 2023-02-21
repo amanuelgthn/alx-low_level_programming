@@ -9,7 +9,7 @@
 char **split_str(char *str)
 {
 	int i = 0;
-	int words = 0;
+	int *words = 0;
 	char *piece, **str_arr, *str_cpy = NULL;
 	
 	if (str == NULL)
@@ -26,11 +26,11 @@ char **split_str(char *str)
 				piece = strtok(NULL, " ");
 				continue;
 			}
-			words++;
+			(*words)++;
 			piece = strtok(NULL, " ");
 		}
 	}
-	str_arr= (char**)malloc(sizeof(char*)*(words));
+	str_arr= (char**)malloc(sizeof(char*)*(*words));
 	piece =strtok(str, " ");
 	for (i = 0; piece!=NULL; i++)
 	{
