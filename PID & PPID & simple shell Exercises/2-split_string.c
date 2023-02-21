@@ -6,10 +6,9 @@
  *@str:string to be separated
  *Return:return the array of each word separted
  **/
-char **split_str(char *str)
+char **split_str(char *str, int *words)
 {
 	int i = 0;
-	int *words = 0;
 	char *piece, **str_arr, *str_cpy = NULL;
 	
 	if (str == NULL)
