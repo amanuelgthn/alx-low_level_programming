@@ -13,7 +13,7 @@ void print_triangle(int size)
 	}
 	else
 	{
-		for (; i <= size; i++)
+		for (; i < size; i++)
 		{
 			for (j = 0; j <= size; j++)
 			{
