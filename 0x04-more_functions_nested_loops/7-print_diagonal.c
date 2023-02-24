@@ -26,7 +26,7 @@ void print_diagonal(int n)
 					_putchar('\\');
 				}
 			}
-			if(i != 0)
+			if (i != 0)
 			{
 				_putchar('\n');
 			}
