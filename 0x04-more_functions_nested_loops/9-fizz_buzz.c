@@ -1,9 +1,9 @@
 #include"main.h"
 /**
 *main-function to print fizz buzz
-*Return: 0 on success 
+*Return: 0 on success
 **/
-int main()
+int main(void)
 {
 	int i = 1;
 
@@ -23,10 +23,9 @@ int main()
 		}
 		else
 		{
-			printf("%d",i);
+			printf("%d", i);
 		}
 		printf(" ");
 	}
-	printf("\n");
 return (0);
 }
