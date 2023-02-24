@@ -1,13 +1,13 @@
 #include"main.h"
 /**
-*main- function to print fizz buzz
-*return 0 on success 
+*main-function to print fizz buzz
+*Return: 0 on success 
 **/
 int main()
 {
 	int i = 1;
 
-	for (; i < 100; i++)
+	for (; i < 101; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
@@ -27,5 +27,6 @@ int main()
 		}
 		printf(" ");
 	}
+	printf("\n");
 return (0);
 }
