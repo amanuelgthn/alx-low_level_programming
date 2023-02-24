@@ -9,6 +9,11 @@ void print_diagonal(int n)
 	
 	for (; i <= n; i++)
 	{
+		if (n < 1)
+		{
+			_putchar('\n');
+			break;
+		}
 		for (j = 0; j < i; j++)
 		{
 			if (j < i - 1)
