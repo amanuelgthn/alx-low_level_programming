@@ -7,6 +7,7 @@
 long int maxPrimeFactors(long int n)
 {
 	long int  maxPrime = -1;
+	long int i = 0;
 	
 	while (n % 2 == 0)
 	{
@@ -18,7 +19,7 @@ long int maxPrimeFactors(long int n)
 		maxPrime = 3;
 		n = n / 3;
 	}
-	for (long int i = 5; i <= sqrt(n); i += 6)
+	for (i = 5; i <= sqrt(n); i += 6)
 	{
 		while (n % i == 0)
 		{
