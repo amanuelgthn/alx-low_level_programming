@@ -4,9 +4,9 @@
 *main- function to finds and prints the largest prime factor of the number 612852475143
 *Return: 0 in sucess
 **/
-long long maxPrimeFactors(long long n)
+int long long maxPrimeFactors(long long n)
 {
-	long long maxPrime = -1;
+	int long long maxPrime = -1;
 	
 	while (n % 2 == 0)
 	{
@@ -40,7 +40,7 @@ long long maxPrimeFactors(long long n)
 int main()
 {
 
-    long long n = 612852475143;
+    int long long n = 612852475143;
 
     printf("%lld\n", maxPrimeFactors(n));
     return 0;
