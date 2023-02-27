@@ -1,7 +1,7 @@
 #include"main.h"
 #include <math.h>
 /**
-*maxPrime-finds and prints the largest prime factor of the number 612852475143
+*maxPrimeFactors-finds and prints the largest prime factor of the number 612852475143
 *@n:number
 *Return: the largest prime factor of the number
 **/
@@ -45,7 +45,7 @@ long int maxPrimeFactors(long int n)
 int main(void)
 {
 	long int n = 612852475143;
-	
+
 	printf("%ld\n", maxPrimeFactors(n));
 	return (0);
 }
