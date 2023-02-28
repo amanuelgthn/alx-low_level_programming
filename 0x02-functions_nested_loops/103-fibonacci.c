@@ -6,8 +6,9 @@
  **/
 int main(void)
 {
-	long int  a, i, k, sum;
+	long int  a, i, j, k, sum;
 
+	j = 1;
 	k = 2;
 	sum = k;
 	for (i = 2 ; i < 4000000 ; i++)
