@@ -15,16 +15,12 @@ int main(void)
 	printf("%d", k);
 	printf(", ");
 
-	for (i = 2 ; i < 51 ; i++)
+	for (i = 2 ; i <= 50 ; i++)
 	{
 		a = k + j;
 		printf("%d", a);
 		j = k;
 		k = a;
-		if (i == 50)
-		{
-			break;
-		}
 		printf(", ");
 	}
 	return (0);
