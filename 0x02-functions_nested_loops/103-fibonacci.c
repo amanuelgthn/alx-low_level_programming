@@ -13,7 +13,7 @@ int main(void)
 	for (i = 2 ; i < 4000000 ; i++)
 	{
 		a = k + j;
-		if ( a % 2 == 0 && sum < 4000000)
+		if (a % 2 == 0 && sum < 4000000)
 		{
 			sum = sum + a;
 		}
