@@ -15,13 +15,13 @@ int main(void)
 	printf("%ld", k);
 	printf(", ");
 
-	for (i = 2 ; i <= 50 ; i++)
+	for (i = 2 ; i <= 49 ; i++)
 	{
 		a = k + j;
 		printf("%ld", a);
 		j = k;
 		k = a;
-		if (i != 44)
+		if (i != 49)
 		{
 			printf(", ");
 		}
