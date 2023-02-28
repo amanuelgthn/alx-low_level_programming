@@ -6,19 +6,19 @@
  **/
 int main(void)
 {
-	int long long  a, i, j, k;
+	long int  a, i, j, k;
 
 	j = 1;
 	k = 2;
-	printf("%lld", j);
+	printf("%ld", j);
 	printf(", ");
-	printf("%lld", k);
+	printf("%ld", k);
 	printf(", ");
 
 	for (i = 2 ; i <= 50 ; i++)
 	{
 		a = k + j;
-		printf("%lld", a);
+		printf("%ld", a);
 		j = k;
 		k = a;
 		if (i != 44)
