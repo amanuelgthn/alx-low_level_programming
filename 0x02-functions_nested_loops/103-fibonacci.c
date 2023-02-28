@@ -6,11 +6,9 @@
  **/
 int main(void)
 {
-	long int  a, i, j, k;
+	long int  a, i, k;
 
-	j = 1;
 	k = 2;
-	printf("%ld", j);
 	printf(", ");
 	printf("%ld", k);
 	printf(", ");
@@ -20,14 +18,11 @@ int main(void)
 		a = k + j;
 		if ( a % 2 == 0)
 		{
-		printf("%ld", a);
+			printf("%ld", a);
 		}
 		j = k;
 		k = a;
-		if (i != 49)
-		{
-			printf(", ");
-		}
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
