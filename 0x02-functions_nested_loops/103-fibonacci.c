@@ -6,11 +6,10 @@
  **/
 int main(void)
 {
-	long int  a, i, j, k, sum;
+	long int  a, i, k, sum;
 
-	j = 1;
 	k = 2;
-	sum = j + k;
+	sum = k;
 	for (i = 2 ; i < 4000000 ; i++)
 	{
 		a = k + j;
