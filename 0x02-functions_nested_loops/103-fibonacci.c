@@ -6,10 +6,10 @@
  **/
 int main(void)
 {
-	long int  a, i, k;
+	long int  a, i, j, k;
 
+	j = 1;
 	k = 2;
-	printf(", ");
 	printf("%ld", k);
 	printf(", ");
 
