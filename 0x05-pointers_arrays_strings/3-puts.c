@@ -5,7 +5,7 @@
 
 
 /**
- *_puts - Short description, single line
+ *_puts - a function that prints a string, followed by a new line, to stdout.
  *@str:input nuber
  *Return: Always 0.
  **/
