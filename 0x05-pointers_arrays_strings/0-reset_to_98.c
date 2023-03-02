@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-**reset_to_98 - Short description, single line
-**@n:input nuber
+**reset_to_98 - reset the variable to a value of 98
+**@n:input number
 **Return: Always 0.
 **/
 void reset_to_98(int *n)
