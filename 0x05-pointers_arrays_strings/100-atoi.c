@@ -8,7 +8,8 @@
 **/
 int _atoi(char *s)
 {
-	int i = 0, num;
+	int i = 0;
+	int num = 0
 	for (; s[i] != '\0'; ++i)
 	{
 		if (s[i] > '9' || s[i] < '0')
