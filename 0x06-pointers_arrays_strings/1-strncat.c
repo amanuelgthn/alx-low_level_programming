@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- **_strncat- Short description, single line
- *@dest:input nuber
+ **_strncat-unction that concatenates two strings
+ *@dest:string where src string is going to be appeneded
  *@src:string to be copied
  *@n:length
  *Return: Always 0.
