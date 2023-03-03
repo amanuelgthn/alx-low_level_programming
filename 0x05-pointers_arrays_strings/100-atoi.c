@@ -19,7 +19,7 @@ int _atoi(char *s)
 			sign = sign * -1;
 			continue;
 		}
-		if (s[i] == '+');
+		if (s[i] == '+')
 		{
 			sign = sign * 1;
 			continue;
