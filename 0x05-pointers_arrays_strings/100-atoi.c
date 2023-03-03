@@ -12,13 +12,13 @@ int _atoi(char *s)
 	int num = 0;
 	for (; s[i] != '\0'; ++i)
 	{
-		if (s[i] > '9' || s[i] < '0')
+		if (s[i] < 48 || s[i] > 57)
 		{
 			return (0);
 		}
 		else
 		{
-			num = num * 10 + s[i] + '0';
+			num = num * 10 + s[i] - 48;
 		}
 	}
 	return (num);
