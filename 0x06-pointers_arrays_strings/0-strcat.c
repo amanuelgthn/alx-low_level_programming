@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strcat - Short description, single line
- *@dest:input nuber
- *@src:string to be copied
- *Return: Always 0.
+ *_strcat - function appends the src string to the dest string
+ *@dest:string where src will be appended
+ *@src:string to be appended to dest
+ *Return: a pointer to the resulting string dest
  **/
 
 char *_strcat(char *dest, char *src)
