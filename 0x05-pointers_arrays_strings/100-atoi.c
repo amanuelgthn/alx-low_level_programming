@@ -18,7 +18,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			num = num * 10 + s[i];
+			num = num * 10 + s[i] + '0';
 		}
 	}
 	return (num);
