@@ -8,8 +8,8 @@
 **/
 int _atoi(char *s)
 {
-	int i = 0;
-	int num = 0;
+	unsigned int i = 0;
+	unsigned int num = 0;
 	for (; s[i] != '\0'; ++i)
 	{
 		if (s[i] < 48 || s[i] > 57)
