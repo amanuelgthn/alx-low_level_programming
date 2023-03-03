@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- **_strncpy- Short description, single line
- *@dest:input nuber
+ **_strncpy- a function that copies a string.
+ *@dest:string where the src string will be copied
  *@src:string to be copied
  *@n:length
  *Return: Always 0.
