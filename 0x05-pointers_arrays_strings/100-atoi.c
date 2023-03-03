@@ -23,7 +23,7 @@ int _atoi(char *s)
 		{
 			sign = sign * 1;
 			continue;
-		}	
+		}
 		if (s[i] < 48 || s[i] > 57)
 		{
 			return (0);
