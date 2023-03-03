@@ -26,7 +26,7 @@ int _atoi(char *s)
 		}
 		if (s[i] < 48 || s[i] > 57)
 		{
-			return (0);
+			continue;
 		}
 		else
 		{
