@@ -11,7 +11,7 @@ int _atoi(char *s)
 	unsigned int i = 0;
 	unsigned int num = 0;
 	unsigned int sign = 1;
-	
+
 	for (; s[i] != '\0'; ++i)
 	{
 		if (s[i] == '-')
@@ -19,7 +19,7 @@ int _atoi(char *s)
 			sign = sign * -1;
 			continue;
 		}
-		if (s[i] == '+')
+		if (s[i] == '+' || s[i] == ' ')
 		{
 			sign = sign * 1;
 			continue;
