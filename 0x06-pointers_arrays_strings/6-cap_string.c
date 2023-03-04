@@ -6,28 +6,25 @@
 **/
 char *cap_string(char *s)
 {
-	int i = 1, j, k = 12, m;
+	int i = 1, j, k = 12, m , capitalize = 32;
 	int separator[] = {',', ';', '.', '?', '"',
 		 '(', ')', '{', '}', ' ', '\n', '\t'};
 	
 	j = strlen(s);
 	for (; i < j; i++)
 	{ 
+		if ( s[i] >= 97 && s[i] <= 122)
+		{
+			s[i] = s[i] - capitalize;
+		}
+		capitalize = 0;
 		for (m = 0; m < k; k++)
 		{
-			if (s[i - 1] == separator[m])
+			if (s[i] == separator[m])
 			{
-				if ( s[i] >= 97 && s[i] <= 122)
-				{
-					s[i] = s[i] - 32;
-					break;
-				}
-			}
-			else
-			{
-				continue;
+				capitalize = 32;
 			}
 		}
 	}
 	return (s);
-}		
+}
