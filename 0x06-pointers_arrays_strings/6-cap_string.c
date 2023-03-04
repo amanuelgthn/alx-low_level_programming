@@ -6,7 +6,7 @@
 **/
 char *cap_string(char *s)
 {
-	int i = 1, j, k = 12, m , capitalize = 32;
+	int i = 0, j, k = 12, m , capitalize = 32;
 	int separator[] = {',', ';', '.', '?', '"',
 		 '(', ')', '{', '}', ' ', '\n', '\t'};
 	
