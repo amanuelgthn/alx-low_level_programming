@@ -12,7 +12,7 @@ char *cap_string(char *s)
 	j = strlen(s);
 	for (; i < j; i++)
 	{ 
-		for (m = 0; m < k, k++)
+		for (m = 0; m < k; k++)
 		{
 			if (s[i] == separator[m])
 			{
