@@ -6,7 +6,7 @@
 **/
 char *cap_string(char *s)
 {
-	int i = 0, j, k = 12, m;
+	int i = 1, j, k = 12, m;
 	int separator[] = {',', ';', '.', '?', '"',
 		 '(', ')', '{', '}', ' ', '\n', '\t'};
 	
@@ -15,11 +15,11 @@ char *cap_string(char *s)
 	{ 
 		for (m = 0; m < k; k++)
 		{
-			if (s[i] == separator[m])
+			if (s[i - 1] == separator[m])
 			{
-				if ( s[i + 1] >= 97 && s[i + 1] <= 122)
+				if ( s[i] >= 97 && s[i] <= 122)
 				{
-					s[i + 1] = s[i + 1] - 32;
+					s[i] = s[i] - 32;
 					break;
 				}
 			}
