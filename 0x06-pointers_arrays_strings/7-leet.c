@@ -11,7 +11,7 @@ char *leet(char *s)
 	j = strlen(s);
 	for (; i < j; i++)
 	{ 
-		if (s[i] >= 'a' || s[i] <= 'A')
+		if (s[i] = 'a' || s[i] = 'A')
 		{
 			s[i] = 52;
 		}
