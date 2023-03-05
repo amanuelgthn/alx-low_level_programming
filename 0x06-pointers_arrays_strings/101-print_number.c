@@ -20,7 +20,7 @@ void print_number(int n)
 	{
 		_putchar(n + '0');
 	}
-	while (n >= 10)
+	else
 	{
 		num = n % 10;
 		n = n / 10;
