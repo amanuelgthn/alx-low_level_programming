@@ -17,6 +17,7 @@ char *rot13(char *s)
 		}
 		s[i] = s[i] + sign;
 		sign = -13;
+		i = i + 1;
 	}
 	return (s);
 }
