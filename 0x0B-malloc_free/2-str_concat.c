@@ -4,7 +4,7 @@
 /**
 *str_concat-returns a pointer to new string which is duplicate of string str
 *@s1:string to be duplicated
-*@s1:string to be duplicated
+*@s2:string to be duplicated
 *Return: a pointer to a new string which is a duplicate of str upon sucess
 **/
 char *str_concat(char *s1, char *s2)
@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 	char *string;
 	int i, j = 0, k;
 
-	if ( s1 == NULL)
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; j < i + k; j++)
 	{
-		if ( j < i)
+		if (j < i)
 		{
 			string[j] = s1[j];
 		}
