@@ -17,13 +17,12 @@ char *cap_string(char *s)
 			s[i] = s[i] - capitalize;
 		}
 		capitalize = 0;
-		for (m = 0; m <= k; k++)
+		for (m = 0; m <= k; m++)
 		{
 			if (s[i] == separator[m])
 			{
-				printf("%c",separator[m]);
 				capitalize = 32;
-				k = 12;
+				break;
 			}
 		}
 	}
