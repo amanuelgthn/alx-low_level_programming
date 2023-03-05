@@ -8,7 +8,8 @@ char *cap_string(char *n)
 {
 	int i, x,j;
 	int cap = 32;
-	int separators[] = {9, 10, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	int separators[] = {',', ';', '.', '?', '"',
+		 '(', ')', '{', '}', ' ', '\n', '\t'};
 	
 	j= strlen(n);
 	for (i = 0; i <j; i++)
