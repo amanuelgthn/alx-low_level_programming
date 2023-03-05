@@ -7,7 +7,7 @@
 char *cap_string(char *s)
 {
 	int i = 0, j, m,k = 12, capitalize = 32;
-	int separator[] = {9, 10, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125}
+	int separator[] = {9, 10, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 
 	j = strlen(s);
 	for (; i < j; i++)
