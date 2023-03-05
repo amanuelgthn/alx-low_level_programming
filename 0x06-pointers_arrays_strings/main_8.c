@@ -9,6 +9,5 @@
 int main(void)
 {
 	print_number(INT_MIN);
-	_putchar('\n');
 	return (0);
 }
