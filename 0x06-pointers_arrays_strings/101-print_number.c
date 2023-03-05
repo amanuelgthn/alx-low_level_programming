@@ -31,6 +31,7 @@ void print_number(int n)
 		}
 		else
 		{
+			_putchar(num + '0');
 			print_number(n);
 		}
 	}
