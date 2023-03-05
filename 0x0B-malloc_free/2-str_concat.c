@@ -44,6 +44,6 @@ char *str_concat(char *s1, char *s2)
 				string[j] = s2[j - i];
 			}
 		}
+		return (string);
 	}
-	return (string);
 }
