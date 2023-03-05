@@ -26,7 +26,7 @@ char *cap_string(char *s)
 			if (s[i] == separator[m])
 			{
 				capitalize = 32;
-				break;
+				k = 12;
 			}
 		}
 	}
