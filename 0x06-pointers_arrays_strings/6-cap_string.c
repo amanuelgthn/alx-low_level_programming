@@ -12,22 +12,9 @@ char *cap_string(char *s)
 	j = strlen(s);
 	for (; i < j; i++)
 	{
-		if (s[i] < 97 || s[i] > 122)
-		{
-			continue;
-		}
-		else
+		if ( s[i] >= 97 && s[i] <= 122)
 		{
 			s[i] = s[i] - capitalize;
-		}
-		capitalize = 0;
-		for (m = 0; m <= k; k++)
-		{
-			if (s[i] == separator[m])
-			{
-				capitalize = 32;
-				k = 12;
-			}
 		}
 	}
 	return (s);
