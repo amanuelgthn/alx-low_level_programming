@@ -18,16 +18,16 @@ void print_number(int n)
 	}
 	while (n > 0)
 	{
-		num = n / 10;
-		if (num < 1)
+		num = n % 10;
+		n = n / 10;
+		if (n < 1)
 		{
-			num = n % 10;
 			_putchar(num + '0');
 			break;
 		}
 		else
 		{
-			print_number(num);
+			print_number(n);
 		}
 	}
 			
