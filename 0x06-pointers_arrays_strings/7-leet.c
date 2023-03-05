@@ -6,14 +6,20 @@
 **/
 char *leet(char *s)
 {
-	int i = 0,j;
+	int i = 0,j, m = 0;
+	char *r = s;
+	char a[] = {'a', 'e', 'o', 't', 'l' };
+	int n[] = {52, 51, 48, 55, 49};
 	
 	j = strlen(s);
 	for (; i < j; i++)
 	{ 
-		if (s[i] == 'a' || s[i] == 'A')
+		for (; m < 5; m++)
 		{
-			s[i] = 52;
+			if (s[i] == a[m] || s[i] == a[m] - 32)
+			{
+				s[i] = n[m];
+			}
 		}
 	}
 	return (s);
