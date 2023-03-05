@@ -4,31 +4,28 @@
 *@s:string to be capitalized
 *Return:pointer to the converted string
 **/
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-	int i, x,j;
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
+	int i = 0, j, k = 12, m , capitalize = 32;
+	int separator[] = {',', ';', '.', '?', '"',
 		 '(', ')', '{', '}', ' ', '\n', '\t'};
 	
-	j= strlen(n);
-	for (i = 0; i <j; i++)
-	{
-		if (n[i] >=97 && n[i] <=122)
+	j = strlen(s);
+	for (; i < j; i++)
+	{ 
+		if ( s[i] >= 97 && s[i] <= 122)
 		{
-			n[i] = n[i] - cap;
+			s[i] = s[i] - capitalize;
 		}
-
-		cap = 0;
-
-		for (x = 0; x <= 12; x++)
+		capitalize = 0;
+		for (m = 0; m < k; m++)
 		{
-			if (n[i] == separators[x])
+			if (s[i] == separator[m])
 			{
-				x = 12;
-				cap = 32;
+				capitalize = 32;
+				break;
 			}
 		}
 	}
-	return (n);
+	return (s);
 }
