@@ -16,7 +16,7 @@ void print_number(int n)
 	{
 		_putchar(0 + '0');
 	}
-	if (n > 0 && n < 10)
+	else if (n > 0 && n < 10)
 	{
 		_putchar(n + '0');
 	}
