@@ -5,11 +5,11 @@
 **/
 void print_number(int n)
 {
-	long int num = 0;
+	unsigned int num = 0;
 
 	if (n < 0 || n == INT_MIN)
 	{
-		n = 0 - n;
+		n = -n;
 		_putchar('-');
 	}
 	if (n == 0)
