@@ -20,8 +20,9 @@ void print_number(int n)
 	{
 		num = n % 10;
 		n = n / 10;
-		if (n < 1)
+		if (num == 0 && n < 10)
 		{
+			_putchar(n + '0');
 			_putchar(num + '0');
 			break;
 		}
@@ -30,5 +31,4 @@ void print_number(int n)
 			print_number(n);
 		}
 	}
-			
 }
