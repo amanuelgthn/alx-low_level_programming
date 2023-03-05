@@ -19,6 +19,7 @@ char *leet(char *s)
 			if (s[i] == a[m] || s[i] == a[m] - 32)
 			{
 				s[i] = n[m];
+				break;
 			}
 		}
 	}
