@@ -10,7 +10,7 @@ char *cap_string(char *n)
 	int cap = 32;
 	int separators[] = {9, 10, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 	
-	j= strlen(s);
+	j= strlen(n);
 	for (i = 0; i <j; i++)
 	{
 		if (n[i] >=97 && n[i] <=122)
