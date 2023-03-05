@@ -10,7 +10,7 @@ char *rot13(char *s)
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	k =sizeof(a) / sizeof(char);
+	k = sizeof(a) / sizeof(char);
 	j = strlen(s);
 	for (; i < j; i++)
 	{
