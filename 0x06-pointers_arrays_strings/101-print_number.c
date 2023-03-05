@@ -5,9 +5,8 @@
 **/
 void print_number(int n)
 {
-  	unsigned int i = 0;
 	unsigned int num = 0;
-	
+
 	if (n < 0)
 	{
 		n = n * -1;
