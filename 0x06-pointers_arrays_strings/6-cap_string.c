@@ -6,14 +6,14 @@
 **/
 char *cap_string(char *n)
 {
-	int i, x;
+	int i, x,j;
 	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-		 '(', ')', '{', '}', ' ', '\n', '\t'};
-
-	for (i = 0; n[i] != '\0'; i++)
+	int separators[] = {9, 10, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+	
+	j= strlen(s);
+	for (i = 0; i <j; i++)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		if (n[i] >=97 && n[i] <=122)
 		{
 			n[i] = n[i] - cap;
 		}
