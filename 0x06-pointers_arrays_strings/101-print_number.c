@@ -27,7 +27,6 @@ void print_number(int n)
 		if (n > 10)
 		{
 			_putchar(num + '0');
-			break;
 		}
 		else
 		{
