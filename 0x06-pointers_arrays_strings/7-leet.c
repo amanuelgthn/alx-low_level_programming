@@ -4,7 +4,7 @@
 *@s:string to be encoded
 *Return:pointer to the encoded string
 **/
-char *leet(char *s);
+char *leet(char *s)
 {
 	int i = 0,j;
 	
