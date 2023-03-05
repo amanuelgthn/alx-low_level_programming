@@ -16,14 +16,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	else if (s1 == NULL)
-	{
-		return (s2);
-	}
-	else if (s2 == NULL)
-	{
-		return (s1);
-	}
 	else
 	{
 		i = strlen(s1);
