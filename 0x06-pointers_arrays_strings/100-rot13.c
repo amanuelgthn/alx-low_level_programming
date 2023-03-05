@@ -6,15 +6,17 @@
 **/
 char *rot13(char *s)
 {
-	int i = 0, j;
+	int i = 0, j, sign;
 
 	j = strlen(s);
 	for (; i < j; i++)
 	{
 		if ((s[i]>=65 && s[i]<=77) || (s[i]>=97 && s[i] <= 109))
 		{
-			s[i] = s[i] + 13;
+			sign = 13;
 		}
+		s[i] = s[i] + sign;
+		sign = -13
 	}
 	return (s);
 }
