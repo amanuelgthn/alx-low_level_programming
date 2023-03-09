@@ -8,7 +8,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0,str_len;
-	char *result
+	char *result;
 	
 	str_len = strlen(s);
 	for (; i < str_len; i++)
