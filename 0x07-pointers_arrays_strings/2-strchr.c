@@ -8,7 +8,7 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0,str_len;
-	char *res;
+	char **res;
 	
 	str_len = strlen(s);
 	for (; i < str_len; i++)
@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 		if (s[i] == c)
 		{
 			res[0]= c;
-			return (res);
+			return (*res);
 			break;
 		}
 		else
