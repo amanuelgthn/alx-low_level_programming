@@ -8,13 +8,15 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0,str_len;
+	char *result
 	
 	str_len = strlen(s);
 	for (; i < str_len; i++)
 	{
 		if (s[i] == c)
 		{
-			return (c);
+			result = c;
+			return (result);
 			break;
 		}
 		else
