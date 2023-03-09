@@ -8,14 +8,14 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0,str_len;
-	char *res[1];
+	char res[1];
 	
 	str_len = strlen(s);
 	for (; i < str_len; i++)
 	{
 		if (s[i] == c)
 		{
-			*res[0] = c;
+			res[0] = c;
 			return (res);
 			break;
 		}
