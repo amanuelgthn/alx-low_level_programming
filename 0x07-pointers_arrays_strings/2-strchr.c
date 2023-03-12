@@ -12,11 +12,7 @@ char *_strchr(char *s, char c)
 	str_len = strlen(s);
 	for (; i < str_len; i++)
 	{
-		if (c = '\0')
-		{
-			return(NULL);
-		}
-		else if (s[i] == c)
+		if (s[i] == c && c != '\0')
 		{
 			return (&s[i]);
 			break;
