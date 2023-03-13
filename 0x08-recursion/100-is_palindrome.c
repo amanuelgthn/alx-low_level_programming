@@ -13,11 +13,8 @@ char *str_slice(char *src)
 	{
 		return (NULL);
 	}
-	for (; i < len - 1; i++)
-	{
-		dest[i - 1] = src[i];
-	}
-	return dest;
+	strncpy(dest, src + 1, len - 1);
+	return (dest);
 }
 /**
 *is_palindrome- function for checking if a string is palindrome
