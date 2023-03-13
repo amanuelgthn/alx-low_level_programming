@@ -26,22 +26,23 @@ char *str_slice(char *src)
 **/
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
+	int len = strlen(s), k;
 	
 	if (len == 0)
 	{
-		return (1);
+		k = 1;
 	}
 	else if (len % 2 == 0)
 	{
-		return (0);
+		k = 0;
 	}
 	else if (s[0] != s[len - 1])
 	{
-		return (0);
+		k = 0;
 	}
 	else
 	{
 		is_palindrome(str_slice(s));
 	}
+	return (k);
 }
