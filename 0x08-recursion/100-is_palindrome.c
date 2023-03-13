@@ -4,7 +4,6 @@
 #include<string.h>
 char *str_slice(char *src)
 {
-	int i = 1;
 	int len = strlen(src);
 	char *dest;
 
