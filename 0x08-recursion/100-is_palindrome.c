@@ -28,10 +28,6 @@ int is_palindrome(char *s)
 	{
 		k = 1;
 	}
-	else if (len % 2 == 0)
-	{
-		k = 0;
-	}
 	else if (s[0] != s[len - 1])
 	{
 		k = 0;
