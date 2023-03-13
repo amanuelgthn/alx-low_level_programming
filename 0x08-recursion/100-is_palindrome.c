@@ -3,14 +3,15 @@
 #include<string.h>
 char *str_slice(char *src)
 {
-    size_t i;
+	int i = 1;
+	int len = strlen(src);
+	char *dest[len - 2];
 
-   for (i = 0; i < n && src[i] != '\0'; i++)
-        dest[i] = src[i];
-    for ( ; i < n; i++)
-        dest[i] = '\0';
-
-   return dest;
+	for (; i < len - 1; i++)
+	{
+		dest[i - 1] = src[i];
+	}
+	return dest;
 }
 /**
 *is_palindrome- function for checking if a string is palindrome
@@ -19,4 +20,3 @@ char *str_slice(char *src)
 **/
 int is_palindrome(char *s)
 {
-	
