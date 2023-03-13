@@ -24,7 +24,7 @@ int is_palindrome(char *s)
 {
 	int len = strlen(s), k;
 	
-	if (len == 0)
+	if (s[0] == '\0')
 	{
 		k = 1;
 	}
