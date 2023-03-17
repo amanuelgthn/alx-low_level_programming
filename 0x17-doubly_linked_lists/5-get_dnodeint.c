@@ -16,5 +16,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		n = n + 1;
 	}
 	new->n = head->n;
-	return (n);
+	return (new);
 }
