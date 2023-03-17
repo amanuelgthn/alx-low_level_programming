@@ -8,7 +8,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int n = 0;
-	dlistint_t *new;
+	dlistint_t *new = malloc(sizeof(dlistint_t));
 	
 	while (n < index)
 	{
