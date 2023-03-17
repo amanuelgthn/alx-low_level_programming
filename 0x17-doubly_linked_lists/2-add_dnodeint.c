@@ -1,13 +1,13 @@
 #include"lists.h"
 /**
-*dlistint_len-return the number of elemensts in a doubly linked list
-*@h:a doubly linked list to be printed
-*Return: the number of nodes or elements in the doubly linked list
+*add_dnodeint-function to add node at the front of the Doubly linked list
+*@h:a doubly linked list to be updated
+*Return: pointer to the new node
 **/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
-	
+
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 	{
