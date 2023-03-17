@@ -7,10 +7,17 @@
 **/
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int n = 0;
+	unsigned int n = 0, count = 0;
 	dlistint_t *new = malloc(sizeof(dlistint_t));
+	dlistint_t *new_node = malloc(sizeof(dlistint_t));
 	
-	while (n < index)
+	new_node = head;
+	while (new_node->next != NULL)
+	{
+		new_node = new_node->next;
+		count = count + 1;
+	}
+	while (n < index && n <= count)
 	{
 		head = head->next;
 		n = n + 1;
