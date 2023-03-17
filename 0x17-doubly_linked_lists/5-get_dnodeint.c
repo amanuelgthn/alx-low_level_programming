@@ -5,7 +5,7 @@
 *@index:index of the node starting from 0
 *Return:the node of the linked list at the given index
 **/
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int n = 0;
 	dlistint_t *new;
