@@ -10,7 +10,7 @@ int sum_dlistint(dlistint_t *head)
 	dlistint_t *check = head;
 	
 	
-	while(check->next != NULL && head !=NULL)
+	while(check->next != NULL)
 	{
 		sum = sum + check->n;
 		check = check->next;
