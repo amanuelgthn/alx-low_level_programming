@@ -1,7 +1,8 @@
 #include"lists.h"
 /**
 *add_dnodeint-function to add node at the front of the Doubly linked list
-*@h:a doubly linked list to be updated
+*@head:a doubly linked list to be updated
+*@n:number to be added to the doubly linked list
 *Return: pointer to the new node
 **/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
