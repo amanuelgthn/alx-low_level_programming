@@ -1,4 +1,4 @@
-#include"main.h"
+#include"lists.h"
 /**
 *free_dlistint-free a distint_t list
 *@head-doubly linked list
