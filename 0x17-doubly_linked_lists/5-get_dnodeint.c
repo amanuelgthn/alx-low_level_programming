@@ -22,6 +22,13 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		head = head->next;
 		n = n + 1;
 	}
-	new->n = head->n;
-	return (new);
+	if (head != NULL && n <= count)
+	{
+		new->n = head->n;
+		return (new);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
