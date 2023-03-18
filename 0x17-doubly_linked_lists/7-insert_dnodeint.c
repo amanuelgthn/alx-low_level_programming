@@ -1,6 +1,6 @@
 #include"lists.h"
 /**
-*insert_dnodeint_at_index-function that inserts a new node at a given index of Linked list
+*insert_dnodeint_at_index-function that inserts a new node at an index
 *@h:a doubly linked list
 *@idx:index of the list where the new node should be added starting from 0
 *@n:new node data
