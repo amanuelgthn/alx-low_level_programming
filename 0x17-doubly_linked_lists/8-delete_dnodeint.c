@@ -37,7 +37,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	else if (index < count)
 	{
-		while (i < idx - 1 && (*head)->next != NULL)
+		while (i < index - 1 && (*head)->next != NULL)
 		{
 			(*head) = (*head)->next;
 			i = i + 1;
