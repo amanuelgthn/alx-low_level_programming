@@ -1,5 +1,4 @@
 #include"lists.h"
-#include"lists.h"
 /**
 *dlistint_len-return the number of elemensts in a doubly linked list
 *@h:a doubly linked list to be printed
@@ -17,15 +16,6 @@ size_t dlistint_len(const dlistint_t *h)
 	}
 	return (n);
 }
-/**
-*insert_dnodeint_at_index-function that inserts a new node at an index
-*@h:a doubly linked list
-*@idx:index of the list where the new node should be added starting from 0
-*@n:new node data
-*Return:the address of the new node or NULL if it failed
-**/
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
-
 /**
 *delete_dnodeint_at_index-function that delets the node at index of a link
 *@head:a doubly linked list
@@ -46,17 +36,17 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	new_node->n = n;
 	if (idx == 0)
 	{
-		if (*h)
+		if (*head)
 		{
-			new_node->next = *h;
-			(*h)->prev = new_node;
+			new_node->next = *head;
+			(*head)->prev = new_node;
 		}
-		*h = new_node;
+		*head = new_node;
 		return (new_node);
 	}
 	else if (idx < count)
 	{
-		tmp = *h;
+		tmp = *head;
 		while (i < idx - 1 && tmp->next != NULL)
 		{
 			tmp = tmp->next;
