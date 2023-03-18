@@ -1,5 +1,22 @@
 #include"lists.h"
 /**
+*dlistint_len-return the number of elemensts in a doubly linked list
+*@h:a doubly linked list to be printed
+*Return: the number of nodes or elements in the doubly linked list
+**/
+size_t dlistint_len(const dlistint_t *h)
+{
+	int n = 0;
+	const dlistint_t *ptr = h;
+
+	while (ptr != NULL)
+	{
+		ptr = ptr->next;
+		n = n + 1;
+	}
+	return (n);
+}
+/**
 *insert_dnodeint_at_index-function that inserts a new node at an index
 *@h:a doubly linked list
 *@idx:index of the list where the new node should be added starting from 0
