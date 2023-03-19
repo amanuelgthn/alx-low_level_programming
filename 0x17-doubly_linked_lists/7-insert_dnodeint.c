@@ -25,7 +25,8 @@ size_t dlistint_len(const dlistint_t *h)
 **/
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int i = 0, count;
+	unsigned int i = 0;
+	size_t count = 0;
 	dlistint_t *new_node = malloc(sizeof(dlistint_t)), *tmp;
 
 	count = dlistint_len(*h);
