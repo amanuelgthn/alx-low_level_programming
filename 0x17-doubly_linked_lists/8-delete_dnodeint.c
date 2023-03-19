@@ -38,7 +38,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		}
 		else
 			*head = NULL;
-		}
 		return (1);
 	}
 	else if (index < count)
