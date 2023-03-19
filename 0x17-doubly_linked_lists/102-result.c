@@ -27,7 +27,7 @@ int main()
 		for (num2 = 1;num2 < 1000; num2++)
 		{
 			num = num1 * num2;
-			if (isPalindrome(num) == 1)
+			if (isPalindrome(num) == 1 && largest < num)
 			{
 				largest = num1 * num2;
 			}
