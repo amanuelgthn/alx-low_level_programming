@@ -33,7 +33,7 @@ int main()
 			}
 		}
 	}
-	printf("%d\n",largest);
+	printf("%d",largest);
 	return (0);
 }
 	
