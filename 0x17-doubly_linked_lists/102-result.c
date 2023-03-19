@@ -24,7 +24,7 @@ int main()
 	
 	for (;num1 < 1000; num1++)
 	{
-		for (num1 = 1;num2 < 1000; num2++)
+		for (num2 = 1;num2 < 1000; num2++)
 		{
 			num = num1 * num2;
 			if (isPalindrome(num) == 1)
