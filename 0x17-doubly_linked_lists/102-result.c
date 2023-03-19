@@ -20,13 +20,13 @@ int isPalindrome(int n)
 }
 int main()
 {
-	int largest = 0, num1 = 1, num = 1;
+	int largest = 0, num1 = 1, num2 = 1;
 	
 	for (;num1 < 1000; num1++)
 	{
 		for (;num2 < 1000; num2++)
 		{
-			if (ispalindrome(num1 * num2) == 1)
+			if (isPalindrome(num1 * num2) == 1)
 			{
 				largest = num1 * num2;
 			}
