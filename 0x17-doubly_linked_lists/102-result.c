@@ -8,7 +8,7 @@ int isPalindrome(int n)
 {
 	int tmp = n, r = 0, sum = 0;
 	
-	while (n != 0)
+	while (n > 1)
 	{
 		r = n % 10;
 		sum = (sum * 10) + r;
