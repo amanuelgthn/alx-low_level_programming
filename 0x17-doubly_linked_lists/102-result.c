@@ -6,3 +6,33 @@
 **/
 int isPalindrome(int n)
 {
+	int tmp = n, r = 0, sum = 0;
+	
+	while (n > 1)
+	{
+		r = n % 10;
+		sum = (sum * 10) + r;
+		n = n / 10;
+	}
+	if ( tmp == sum)
+		return (1);
+	return (-1);
+}
+int main()
+{
+	int largest = 0, num1 = 1, num = 1;
+	
+	for (;num1 < 1000; num1++)
+	{
+		for (;num2 < 1000; num2++)
+		{
+			if (ispalindrome(num1 * num2) == 1)
+			{
+				largest = num1 * num2;
+			}
+		}
+	}
+	printf("%d\n",largest);
+	return (0);
+}
+	
