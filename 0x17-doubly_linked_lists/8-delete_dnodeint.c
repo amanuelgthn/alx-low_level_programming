@@ -33,7 +33,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if (*head)
 		{
-			(*head)->next->prev = NULL;
+			(*head) = (*head)->next;
+			(*head)->prev = NULL;
+			(*head)->prev->next = NULL;
 		}
 		return (1);
 	}
