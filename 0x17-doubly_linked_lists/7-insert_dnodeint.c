@@ -6,7 +6,7 @@
 **/
 size_t dlistint_len(const dlistint_t *h)
 {
-	int n = 0;
+	unsigned int n = 0;
 	const dlistint_t *ptr = h;
 
 	while (ptr != NULL)
