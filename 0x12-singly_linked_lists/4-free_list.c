@@ -1,11 +1,11 @@
 #include"lists.h"
 /**
-*free_list-free a distint_t list
+*free_list-free a singly linked list
 *@head:doubly linked list
 **/
 void free_list(list_t *head)
 {
-	dlistint_t *freed = head;
+	list_t *freed = head;
 
 	while (head)
 	{
