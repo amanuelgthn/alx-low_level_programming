@@ -1,23 +1,28 @@
 #include"lists.h"
 /**
-*list_len-print number of elements in a single linked list
-*@h:constant singly linked list
-*Return:number of nodes
+*add_node-adds a new node at the beginning of a list_t list
+*@head: a singly linked list
+*@str:string to be added to the node
+*Return:the address of the new element or NULL if it failed
 **/
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	const list_t *current_node = h;
-	int count = 0;
-
-	while (current_node)
+	list_t *new = malloc(sizeof(list_t));
+	int str_len = strlen(str);
+	
+	if (new == NULL)
+		return (NULL);
+	new->str = strdup(str);
+	new->len = str_len;
+	if ((*head) == NULL)
 	{
-		if (current_node->str == NULL)
-		{
-			count = count;
-		}
-		current_node = current_node->next;
-		count = count + 1;
+		new->next = NULL;
+		(*head = new);
 	}
-	return (count);
-	;
+	else if
+	{
+		new->next = (*head);
+		(*head) = new;
+	}
+	return (new);
 }
