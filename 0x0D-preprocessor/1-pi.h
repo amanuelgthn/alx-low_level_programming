@@ -1,4 +1,4 @@
-#ifndef 1-PI
-#define 1-PI
+#ifndef _1-PI_
+#define _1-PI_
 #define PI 3.14159265359
 #endif /* 1-PI */
