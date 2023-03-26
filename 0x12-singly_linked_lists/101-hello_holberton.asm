@@ -1,20 +1,14 @@
-extern printf
+          global    _start
 
-section .text
+          section   .text
+_start:   mov       rax, 1                  ; system call for write
+          mov       rdi, 1                  ; file handle 1 is stdout
+          mov       rsi, message            ; address of string to output
+          mov       rdx, 13                 ; number of bytes
+          syscall                           ; invoke operating system to do the write
+          mov       rax, 60                 ; system call for exit
+          xor       rdi, rdi                ; exit code 0
+          syscall                           ; invoke operating system to exit
 
-global main
-main:
-push rbp
-mov rdi,fmt
-mov rsi,msg
-moc rax,0
-call printf
-
-pop rbp
-
-mov rax,0
-ret
-
-section .data
-msg: db 'Hello, Holberton' , 0
-fmt: db "%s", 10, 0
+          section   .data
+message:  db        "Hello, World", 10    
