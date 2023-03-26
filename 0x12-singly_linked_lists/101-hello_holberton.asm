@@ -4,6 +4,7 @@ section .text
 
 global main
 main:
+push rbp
 mov rdi,fmt
 mov rsi,msg
 moc rax,0
