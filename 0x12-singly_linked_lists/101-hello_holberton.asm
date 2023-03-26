@@ -1,13 +1,16 @@
-; Sections:
-section .data
-  hello: db "Hello, Holberton"
-  ending: db "!", 10
-section .bss
-  input: resb 16
 section .text
   global _start
-; Functions:
 _start:
-  mov rax, 60
-  mov rdi, 0
-  syscall
+  mov edx,len
+  mov ecx, msg
+  
+  mov ebx, 1
+  mov eax, 4
+  int 0x80
+  
+  mov eax,1
+  int 0x80
+section .data
+msg db 'Hello, Holberton' , 0xa
+len equ $ - msg
+  
