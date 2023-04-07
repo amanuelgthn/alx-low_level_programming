@@ -8,7 +8,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *table = NULL;
 	hash_node_t **data = NULL;
-	unsigned int i = 0;
 	
 	table = calloc(1, sizeof(hash_table_t));
 	if (table == NULL)
@@ -22,10 +21,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	table->size = size;
 	table->array = data;
-	
-	for (; i < size; i++)
-	{
-		table->array[i] = NULL;
-	}
 	return (table);
 }
