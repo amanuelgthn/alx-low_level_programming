@@ -9,6 +9,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *table;
 	hash_node_t **data;
 
+<<<<<<< HEAD
+=======
+	if (size == 0)
+		return (NULL);
+>>>>>>> 1a3da09b981b4f1592a9cf7db997b51cdccf75c3
 	table = (hash_table_t *)malloc(sizeof(hash_table_t));
 	if (table == NULL)
 	{
