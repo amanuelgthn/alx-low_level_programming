@@ -8,7 +8,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned int long ind;
-	hash_table_t *current = NULL;
+	hash_node_t *current = NULL;
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
