@@ -68,17 +68,26 @@ hash_node_t* create_node(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int ind;
-	hash_node_t *new = create_node(key, value), *current = NULL;
-
-	if (new == NULL)
-	{
-		return (0);
-	}
+	hash_node_t *new = NULL, *current = NULL;
+	
 	ind = key_index((unsigned char *)key, ht->size);
 	current = ht->array[ind];
-	if (current == NULL)
+	while (current)
 	{
-		ht->array[ind] = new;
+		if(strcmp(current->key, key) == 0)
+		{
+			current_>vlaue = strdup(value);
+			return (1);
+		}
+		current = current->next;
 	}
-	return (1);
+	new = create_node(key, value);
+	if (new == NULL)
+	{
+		free (new);
+		return (0);
+	}
+	new->next = ht->array[ind];
+	ht->array[ind] = new;
+	return(1);
 }
