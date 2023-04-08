@@ -78,11 +78,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	current = ht->array[ind];
 	if (current == NULL)
 	{
-		ht->array[ind] = strdup(value);
-	}
-	else if (strcmp(current->value, value) == 0)
-	{
-		strcpy(ht->array[ind], value);
+		ht->array[ind] = new
 	}
 	return (1);
 }
