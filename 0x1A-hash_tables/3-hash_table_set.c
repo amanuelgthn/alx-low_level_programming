@@ -5,7 +5,7 @@
 *@str:string to be added to the node
 *Return:the address of the new element or NULL if it failed
 **/
-list_t *add_node(list_t **head, const char *str)
+/**list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new = malloc(sizeof(list_t));
 	int str_len = strlen(str);
@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 		(*head) = new;
 	}
 	return (new);
-}
+}**/
 /**
 *create_node- create hash node of the new element
 *@key:key
