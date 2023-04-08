@@ -5,9 +5,10 @@
 *@value:value of key
 *Return:return pointer to the created node
 **/
-hash_node_t* create_node(const char *key, const char *value)
+hash_node_t *create_node(const char *key, const char *value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
+	
 	if (node == NULL)
 	{
 		return (NULL);
@@ -25,8 +26,8 @@ hash_node_t* create_node(const char *key, const char *value)
 	strcpy(node->key, key);
 	strcpy(node->value, value);
 	node->next = NULL;
-	return node;
-}				   
+	return (node);
+}			   
 /**
 *hash_table_set-function that adds an element to the hash table
 *@ht:hash table
@@ -38,12 +39,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int ind;
 	hash_node_t *new = NULL, *current = NULL;
-	
+
 	ind = key_index((unsigned char *)key, ht->size);
 	current = ht->array[ind];
 	while (current)
 	{
-		if(strcmp(current->key, key) == 0)
+		if (strcmp(current->key, key) == 0)
 		{
 			free(current->value);
 			current->value = strdup(value);
