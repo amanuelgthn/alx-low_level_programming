@@ -8,6 +8,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned int long ind;
+	hash_table_t *current = NULL;
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
@@ -16,4 +17,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 	else if(strcmp((*ht->array)->key, key) == 0)
 		return (ht->array[ind]->value);
+	else
+	{
+		current = ht->array[ind];
+		while(current)
+		{
+			if (strcmp(current->key, key) == 0)
+				return (current->value);
+			current = current->next;
+		}
+	}
+	return (NULL);
+		 
 }
