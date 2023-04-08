@@ -5,7 +5,7 @@
 **/
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i = 0;
+	unsigned long int i = 0, j = 0;
 
 	if (ht)
 	{
@@ -13,8 +13,11 @@ void hash_table_print(const hash_table_t *ht)
 		for (; i < ht->size; i++)
 		{
 			if (ht->array[i])
+			{
 				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-			if (ht->array[i + 1])
+				j = j + 1;
+			}
+			if (ht->array[i + 1] && j > 0)
 				printf(", ");
 		}
 		printf("}\n");
