@@ -78,7 +78,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	current = ht->array[ind];
 	if (current == NULL)
 	{
-		ht->array[ind] = new
+		ht->array[ind] = new;
 	}
 	return (1);
 }
