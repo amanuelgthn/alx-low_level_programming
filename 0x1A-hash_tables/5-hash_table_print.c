@@ -40,8 +40,8 @@ void hash_table_print(const hash_table_t *ht)
 			collision = ht->array[i];
 			while(collision)
 			{
-				printf("'%s': '%s'", collision->next->key, collision->next->value);
 				collision = collision->next;
+				printf("'%s': '%s'", collision->key, collision->value);
 				if (collision->next != NULL)
 					printf(", ");
 			}
