@@ -13,5 +13,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht->array[ind] == NULL)
 		return NULL;
 	else
-		return(ht->array[ind]);
+		return(ht->array[ind]->value);
 }
