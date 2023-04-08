@@ -23,8 +23,8 @@ hash_node_t *create_node(const char *key, const char *value)
 	{
 		return (NULL);
 	}
-	strcpy(node->key, key);
-	strcpy(node->value, value);
+	node->key = strdup(key);
+	node->value = strdup(value);
 	node->next = NULL;
 	return (node);
 }
