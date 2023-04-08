@@ -27,7 +27,7 @@ hash_node_t *create_node(const char *key, const char *value)
 	strcpy(node->value, value);
 	node->next = NULL;
 	return (node);
-}			   
+}
 /**
 *hash_table_set-function that adds an element to the hash table
 *@ht:hash table
@@ -55,10 +55,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new = create_node(key, value);
 	if (new == NULL)
 	{
-		free (new);
+		free(new);
 		return (0);
 	}
 	new->next = ht->array[ind];
 	ht->array[ind] = new;
-	return(1);
+	return (1);
 }
