@@ -44,7 +44,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (collision->next != NULL)
 					printf(", ");
 			}
-			free_list(current);
+			free_list(collision);
 			if (ht->array[i + 1] && j > 0)
 				printf(", ");
 		}
