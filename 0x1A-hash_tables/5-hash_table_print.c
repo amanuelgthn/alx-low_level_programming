@@ -1,0 +1,19 @@
+#include"hash_tables.h"
+/**
+*hash_table_print-function that prints a hashtable
+*@ht:hash table
+**/
+void hash_table_print(const hash_table_t *ht)
+{
+	hash_node_t *current = NULL;
+	unsigned long int = 0;
+	
+	if (ht)
+	{
+		for (; i < ht->size; i++)
+		{
+			if(ht->array[i])
+				printf("%s: %s",ht->array[i]->key,ht->array[i]->value);
+		}
+	}
+}
