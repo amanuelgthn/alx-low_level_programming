@@ -38,6 +38,6 @@ void hash_table_delete(hash_table_t *ht)
 				collision = collision->next;
 			}
 		}
-		free(ht->size);
+		free(ht);
 	}
 }
