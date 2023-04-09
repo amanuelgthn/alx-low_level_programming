@@ -31,18 +31,14 @@ void hash_table_print(const hash_table_t *ht)
 		printf("{");
 		for (; i < ht->size; i++)
 		{
-			if (ht->array[i])
-			{
-				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-				j = j + 1;
-			}
 			collision = ht->array[i];
-			while(collision->next && collision->next->key &&collision->next->value)
+			while(collision)
 			{
-				collision = collision->next;
 				printf("'%s': '%s'", collision->key, collision->value);
+				j = j + 1;
 				if (collision->next != NULL)
 					printf(", ");
+				collision = collision->next;
 			}
 			free_list(collision);
 			if (ht->array[i + 1] && j > 0)
