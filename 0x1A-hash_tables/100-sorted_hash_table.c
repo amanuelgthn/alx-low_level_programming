@@ -82,7 +82,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(new);
 		return (0);
 	}
-	new = create_node(key, value);
 	ind = key_index((unsigned char *)key, ht->size);
 	if(ht->shead == NULL && ht->stail == NULL)
 	{
