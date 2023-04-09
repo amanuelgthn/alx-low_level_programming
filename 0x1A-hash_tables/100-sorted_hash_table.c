@@ -86,26 +86,26 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	ind = key_index((unsigned char *)key, ht->size);
 	if(ht->shead == NULL && ht->stail == NULL)
 	{
-		new->next = shead;
-		new->prev = stail;
+		new->snext = ht->shead;
+		new->sprev = ht->stail;
 	}
 	else
 	{
 		if(strcmp(new->key, ht->shead->key) <= 0)
 		{
-			ht->shead->prev = new;
+			ht->shead->sprev = new;
 			new = ht->shead;
 		}
 		else
 		{
-			ht->stail->next = new;
+			ht->stail->snext = new;
 			new = ht->stail;
 		}
 	}
 	if (ht->array[ind] == NULL)
 	{
 		ht->array[ind] = new;
-		return (1)
+		return (1);
 	}
 	current = ht->array[ind];
 	while (current)
