@@ -26,13 +26,14 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0, j = 0;
 	hash_node_t *collision;
+	
 	if (ht)
 	{
 		printf("{");
 		for (; i < ht->size; i++)
 		{
 			collision = ht->array[i];
-			while(collision)
+			while (collision)
 			{
 				printf("'%s': '%s'", collision->key, collision->value);
 				j = j + 1;
