@@ -73,7 +73,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	
 	unsigned long int ind;
-	hash_node_t *new = create_node(key, value), *current = NULL;
+	shash_node_t *new = create_snode(key, value), *current = NULL;
 
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
