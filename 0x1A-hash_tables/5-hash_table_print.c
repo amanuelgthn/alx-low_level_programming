@@ -26,7 +26,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0, j = 0;
 	hash_node_t *collision;
-	
+
 	if (ht)
 	{
 		printf("{");
