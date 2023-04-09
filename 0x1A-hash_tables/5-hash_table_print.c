@@ -3,7 +3,6 @@
 *free_list-free a singly linked list
 *@head:doubly linked list
 **/
-/**
 void free_list(hash_node_t *head)
 {
 
@@ -18,7 +17,7 @@ void free_list(hash_node_t *head)
 		free(head);
 		head = head->next;
 	}
-}**/
+}
 /**
 *hash_table_print-function that prints a hashtable
 *@ht:hash table
@@ -37,7 +36,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 				j = j + 1;
 			}
-			/*collision = ht->array[i];
+			collision = ht->array[i];
 			while(collision->next && collision->next->key &&collision->next->value)
 			{
 				collision = collision->next;
@@ -45,7 +44,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (collision->next != NULL)
 					printf(", ");
 			}
-			free_list(collision);*/
+			free_list(collision);
 			if (ht->array[i + 1] && j > 0)
 				printf(", ");
 		}
