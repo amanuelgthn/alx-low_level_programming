@@ -23,6 +23,8 @@ void hash_table_delete(hash_table_t *ht)
 			free_list(current);
 		}
 		free(ht->array);
+		ht->array = NULL;
 		free(ht);
+		ht = NULL;
 	}
 }
