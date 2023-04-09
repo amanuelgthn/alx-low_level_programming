@@ -38,7 +38,7 @@ void hash_table_print(const hash_table_t *ht)
 				j = j + 1;
 			}
 			collision = ht->array[i];
-			while(collision->next)
+			while(collision->next && collision->next->key &&collision->next->value)
 			{
 				collision = collision->next;
 				printf("'%s': '%s'", collision->key, collision->value);
