@@ -9,11 +9,8 @@ void free_list(hash_node_t *head)
 	while (head)
 	{
 		free(head->key);
-		head->key = NULL;
 		free(head->value);
-		head->value = NULL;
 		free(head->next);
-		head->next = NULL;
 		free(head);
 		head = head->next;
 	}
