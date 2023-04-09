@@ -6,7 +6,6 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int i = 0;
-	hash_table_t *freed = ht;
 	hash_node_t *next = NULL, *current = NULL;
 
 	if (ht)
@@ -22,7 +21,7 @@ void hash_table_delete(hash_table_t *ht)
 				free_list(next);
 			}
 		}
-		free(freed->array);
-		free(freed);
+		free(ht->array);
+		free(ht);
 	}
 }
