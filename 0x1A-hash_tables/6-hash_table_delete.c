@@ -19,7 +19,6 @@ void hash_table_delete(hash_table_t *ht)
 				free_list(current);
 				current = next;
 			}
-			free_list(next);
 		}
 		free(ht->array);
 		free(ht);
