@@ -26,7 +26,7 @@ void free_list(hash_node_t *head)
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i = 0, j = 0;
-	hash_node_t *collision;
+	/*hash_node_t *collision;*/
 	if (ht)
 	{
 		printf("{");
@@ -37,7 +37,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 				j = j + 1;
 			}
-			/**collision = ht->array[i];
+			/*collision = ht->array[i];
 			while(collision->next && collision->next->key &&collision->next->value)
 			{
 				collision = collision->next;
