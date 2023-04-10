@@ -129,10 +129,24 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 **/
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
-	char *key_value;
-	
-	key_value = hash_table_get(ht, key);
-	return (key_value);
+	unsigned int long ind;
+	shash_node_t *current = NULL;
+
+	if (ht == NULL || key == NULL)
+		return (NULL);
+	ind = key_index((unsigned char *)key, ht->size);
+	current = ht->array[ind];
+	if (current == NULL)
+		return (NULL);
+	else if (strcmp(current->key, key) == 0)
+		return (current->value);
+	while (current)
+	{
+		if (strcmp(current->key, key) == 0)
+			return (current->value);
+		current = current->next;
+	}
+	return (NULL);
 }
 /**
 *shash_table_t_print-print the sorted hash table
