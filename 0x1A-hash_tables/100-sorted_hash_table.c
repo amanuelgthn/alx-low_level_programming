@@ -1,6 +1,6 @@
 #include"hash_tables.h"
 /**
-*shash_table_t-function to create a sorted hash table
+*shash_table_create-function to create a sorted hash table
 *@size:size of the hash table to be created
 *Return:the newly created table
 **/
@@ -64,7 +64,7 @@ shash_node_t *create_snode(const char *key, const char *value)
 }
 /**
 *shash_table_set-function that adds an element to the sorted hash table
-*@ht-sorted hash table
+*@ht:sorted hash table
 *@key:key cannot be an empty string
 *@value:value of key must be duplicated
 *Return:1 if it succeeded or 0 if otherwise
@@ -148,7 +148,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	return (NULL);
 }
 /**
-*shash_table_t_print-print the sorted hash table
+*shash_table_print-print the sorted hash table
 *@ht: sorted hash table
 **/
 void shash_table_print(const shash_table_t *ht)
@@ -187,6 +187,10 @@ void shash_table_print_rev(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
+/**
+*shash_table_delete- delete the given sorted hash table
+*@ht:hash table
+**/
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int i = 0;
