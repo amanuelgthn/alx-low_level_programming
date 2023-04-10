@@ -154,7 +154,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 **/
 void shash_table_print(const shash_table_t *ht)
 {
-	const shash_table_t *ptr = ht->shead;
+	const shash_node_t *ptr = ht->shead;
 
 	printf("{");
 	while(ptr != NULL)
