@@ -134,7 +134,12 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	key_value = hash_table_get(ht, key);
 	return (key_value);
 }
-/*
+/**
+*shash_table_t-print the sorted hash table
+*@ht: sorted hash table
+**/
 void shash_table_print(const shash_table_t *ht)
+{
+	
 void shash_table_print_rev(const shash_table_t *ht)
 void shash_table_delete(shash_table_t *ht)*/
