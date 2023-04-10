@@ -207,7 +207,7 @@ void shash_table_delete(shash_table_t *ht)
 				collision->value = NULL;
 				collision = collision->next;
 			}
-			free_list(collision);
+			free(collision);
 			collision = NULL;
 		}
 		free(ht->array);
