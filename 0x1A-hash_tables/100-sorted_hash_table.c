@@ -135,11 +135,70 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	return (key_value);
 }
 /**
-*shash_table_t-print the sorted hash table
+*shash_table_t_print-print the sorted hash table
 *@ht: sorted hash table
 **/
 void shash_table_print(const shash_table_t *ht)
 {
-	
+	const shash_table_t *ptr = ht->shead;
+
+	printf("{");
+	while(ptr != NULL)
+	{
+		printf("'%s': '%s'", ptr->key, ptr->value);
+		if (ptr->snext != NULL)
+		{
+			printf(", ");
+			ptr = ptr->snext;
+		}
+	}
+	printf("}\n");
+}
+/**
+*shash_table_print_rev-print the sorted hash table in reverse
+*@ht: sorted hash table
+**/
 void shash_table_print_rev(const shash_table_t *ht)
-void shash_table_delete(shash_table_t *ht)*/
+{
+	const shash_table_t *ptr = ht->stail;
+
+	printf("{");
+	while(ptr != NULL)
+	{
+		printf("'%s': '%s'", ptr->key, ptr->value);
+		if (ptr->sprev != NULL)
+		{
+			printf(", ");
+			ptr = ptr->sprev;
+		}
+	}
+	printf("}\n");
+}
+void shash_table_delete(shash_table_t *ht)
+{
+	{
+	unsigned long int i = 0;
+	shash_node_t *collision = NULL;
+
+	if (ht)
+	{
+		for (; i < ht->size; i++)
+		{
+			collision = ht->array[i];
+			while (collision)
+			{
+				free(collision->key);
+				collision->key = NULL;
+				free(collision->value);
+				collision->value = NULL;
+				collision = collision->next;
+			}
+			free_list(collision);
+			collision = NULL;
+		}
+		free(ht->array);
+		ht->array = NULL;
+		free(ht);
+		ht = NULL;
+	}
+}
