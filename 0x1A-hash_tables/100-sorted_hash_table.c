@@ -174,7 +174,7 @@ void shash_table_print(const shash_table_t *ht)
 **/
 void shash_table_print_rev(const shash_table_t *ht)
 {
-	const shash_table_t *ptr = ht->stail;
+	const shash_node_t *ptr = ht->stail;
 
 	printf("{");
 	while(ptr != NULL)
