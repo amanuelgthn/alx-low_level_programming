@@ -120,7 +120,21 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	new->next = ht->array[ind];
 	ht->array[ind] = new;
 	return (1);
-/*char *shash_table_get(const shash_table_t *ht, const char *key)
+}
+/**
+*shash_table_get-function to retrieve value of key
+*@ht:a hash table
+*@key:key
+*Return: value of key if found or NULL if not
+**/
+char *shash_table_get(const shash_table_t *ht, const char *key)
+{
+	char *key_value;
+	
+	key_value = hash_table_get(ht, key);
+	return (key_value);
+}
+/*
 void shash_table_print(const shash_table_t *ht)
 void shash_table_print_rev(const shash_table_t *ht)
 void shash_table_delete(shash_table_t *ht)*/
