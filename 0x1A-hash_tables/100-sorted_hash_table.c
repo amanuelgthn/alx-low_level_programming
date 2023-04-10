@@ -10,7 +10,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 	shash_node_t **array;
 	shash_node_t *shead;
 	shash_node_t *stail;
-	
+
 	if (size == 0)
 		return (NULL);
 	table = malloc(sizeof(shash_table_t));
@@ -29,7 +29,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 	table->array = array;
 	table->shead = shead;
 	table->stail = stail;
-	return(table);
+	return (table);
 }
 /**
 *create_snode-create a sorted hash node of the new element
@@ -40,7 +40,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 shash_node_t *create_snode(const char *key, const char *value)
 {
 	shash_node_t *node = malloc(sizeof(shash_node_t));
-	
+
 	if (node == NULL)
 	{
 		return (NULL);
@@ -71,7 +71,6 @@ shash_node_t *create_snode(const char *key, const char *value)
 **/
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-	
 	unsigned long int ind;
 	shash_node_t *new = create_snode(key, value), *current = NULL;
 
@@ -83,14 +82,14 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	ind = key_index((unsigned char *)key, ht->size);
-	if(ht->shead == NULL && ht->stail == NULL)
+	if (ht->shead == NULL && ht->stail == NULL)
 	{
 		new->snext = ht->shead;
 		new->sprev = ht->stail;
 	}
 	else
 	{
-		if(strcmp(new->key, ht->shead->key) <= 0)
+		if (strcmp(new->key, ht->shead->key) <= 0)
 		{
 			ht->shead->sprev = new;
 			new = ht->shead;
@@ -157,7 +156,7 @@ void shash_table_print(const shash_table_t *ht)
 	const shash_node_t *ptr = ht->shead;
 
 	printf("{");
-	while(ptr != NULL)
+	while (ptr != NULL)
 	{
 		printf("'%s': '%s'", ptr->key, ptr->value);
 		if (ptr->snext != NULL)
@@ -177,7 +176,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	const shash_node_t *ptr = ht->stail;
 
 	printf("{");
-	while(ptr != NULL)
+	while (ptr != NULL)
 	{
 		printf("'%s': '%s'", ptr->key, ptr->value);
 		if (ptr->sprev != NULL)
