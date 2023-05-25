@@ -1,5 +1,2 @@
-all: school
-
-school: main.c school.c
-	@gcc main.c school.c
-	@chmod +x school
+all:
+	gcc main.c school.c -o school
