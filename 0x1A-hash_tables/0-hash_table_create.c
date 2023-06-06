@@ -20,6 +20,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	data = calloc(size, sizeof(char *));
 	if (data == NULL)
 	{
+		free(table);
+		free(data);
 		return (NULL);
 	}
 	table->size = size;
