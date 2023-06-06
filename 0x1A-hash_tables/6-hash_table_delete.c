@@ -5,14 +5,14 @@
 **/
 void hash_table_delete(hash_table_t *ht)
 {
-	unsigned long int i;
+	unsigned long int i = 0;
 	hash_node_t *next = NULL, *current = NULL;
 
 	if (ht == NULL)
 		return;
 	else
 	{
-		for (i = 0; i < ht->size; i++)
+		while(i < ht->size)
 		{
 			current = ht->array[i];
 			while (current != NULL)
@@ -23,6 +23,7 @@ void hash_table_delete(hash_table_t *ht)
 				free(current);
 				current = next;
 			}
+			i++;
 		}
 		free(ht->array);
 		free(ht);
