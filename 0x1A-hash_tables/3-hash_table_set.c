@@ -16,11 +16,13 @@ hash_node_t *create_node(const char *key, const char *value)
 	node->key = malloc(sizeof(strlen(key) + 1));
 	if (node->key == NULL)
 	{
+		free(node->key);
 		return (NULL);
 	}
 	node->value = malloc(sizeof(strlen(value) + 1));
 	if (node->value == NULL)
 	{
+		free(node->value);
 		return (NULL);
 	}
 	node->key = strdup(key);
@@ -41,7 +43,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new = create_node(key, value), *current = NULL;
 
 	if (ht == NULL || key == NULL || value == NULL)
+	{
+		free(new->key);
+		free(new->value);
+		free(new);
 		return (0);
+	}
 	if (new == NULL)
 	{
 		free(new->key);
