@@ -37,7 +37,7 @@ void hash_table_print(const hash_table_t *ht)
 					printf(", ");
 				collision = collision->next;
 			}
-			if (ht->array[i + 1] && j > 0)
+			if (ht->array[i + 1] != NULL && j > 0)
 				printf(", ");
 		}
 		printf("}\n");
