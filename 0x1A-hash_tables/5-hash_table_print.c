@@ -29,16 +29,19 @@ void hash_table_print(const hash_table_t *ht)
 		for (; i < ht->size; i++)
 		{
 			collision = ht->array[i];
-			while (collision)
+			if (collision)
 			{
-				printf("'%s': '%s'", collision->key, collision->value);
-				j = j + 1;
-				if (collision->next != NULL)
+				while (collision)
+				{
+					printf("'%s': '%s'", collision->key, collision->value);
+					j = j + 1;
+					if (collision->next != NULL)
+						printf(", ");
+					collision = collision->next;
+				}
+				if (ht->array[i + 1] != NULL && j > 0)
 					printf(", ");
-				collision = collision->next;
 			}
-			if (ht->array[i + 1] != NULL && j > 0)
-				printf(", ");
 		}
 		printf("}\n");
 	}
