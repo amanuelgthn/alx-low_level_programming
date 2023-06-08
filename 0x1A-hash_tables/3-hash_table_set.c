@@ -40,7 +40,8 @@ hash_node_t *create_node(const char *key, const char *value)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int ind;
-	hash_node_t *new = NULL, *current = NULL;
+	hash_node_t *new = malloc(sizeof(hash_table_t));
+	hash_node_t*current = NULL;
 
 	if (ht == NULL || key == NULL || value == NULL)
 	{
