@@ -47,6 +47,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
+	if(new == NULL)
+	{
+		free(new);
+		return (0);
+	}
 	ind = key_index((unsigned char *)key, ht->size);
 	new->key = strdup(key);
 	new->value = strdup(value);
