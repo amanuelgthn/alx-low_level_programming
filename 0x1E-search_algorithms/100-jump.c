@@ -27,7 +27,7 @@ int jump_search(int *array, size_t size, int value)
 			}
 		}
 		else if (array[i + root] < value)
-			i += root - 1;
+			i += root - 2;
 	}
 	return (-1);
 }
