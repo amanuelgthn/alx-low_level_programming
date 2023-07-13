@@ -6,7 +6,7 @@
  * @value: the value to be searched
  * Return: first index where value is located or -1 if the array is NULL or value is not  present
  **/
-int interpolation_serch(int *array, size_t size, int value)
+int interpolation_search(int *array, size_t size, int value)
 {
 	size_t low = 0, pos, high = size- 1;
 
