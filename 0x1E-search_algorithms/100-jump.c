@@ -32,11 +32,8 @@ int jump_search(int *array, size_t size, int value)
 			return (i);
 		if (array[i + root] < value)
 		{
-			/**printf("increment index:");
 			printf("%lu\n", i);**/
 			i += root - 1;
-			/**printf("%lu\n", i);
-			//printf("---\n");**/
 		}
 	}
 	return (-1);
