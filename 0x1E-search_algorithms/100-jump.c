@@ -15,7 +15,6 @@ int jump_search(int *array, size_t size, int value)
 	if (array == NULL || size == 0)
 		return (-1);
 	root = sqrt(high);
-	/**printf("size = [%lu], root = [%lu]\n", size, root);**/
 	for (; i < size; i++)
 	{
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
@@ -32,7 +31,7 @@ int jump_search(int *array, size_t size, int value)
 			return (i);
 		if (array[i + root] < value)
 		{
-			printf("%lu\n", i);**/
+			printf("%lu\n", i);
 			i += root - 1;
 		}
 	}
