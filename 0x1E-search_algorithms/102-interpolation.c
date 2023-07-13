@@ -15,7 +15,7 @@ int interpolation_serch(int *array, size_t size, int value)
 		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
 		if (array[pos] < value)
 			low = pos + 1;
-		else if (key < array[pos])
+		else if (value < array[pos])
 			high = pos - 1;
 		else
 			return pos;
