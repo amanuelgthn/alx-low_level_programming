@@ -12,7 +12,7 @@ int jump_search(int *array, size_t size, int value)
 {
 	size_t i = 0, root, high = size, found = 0;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 	root = sqrt(high);
 	/**printf("size = [%lu], root = [%lu]\n", size, root);**/
