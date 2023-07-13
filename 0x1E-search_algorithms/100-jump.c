@@ -8,7 +8,7 @@
 **/
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i = 0, root, high = size - 1, found;
+	size_t i = 0, root, high = size - 1, found = 0;
 
 	if (array == NULL)
 		return (-1);
@@ -16,9 +16,7 @@ int jump_search(int *array, size_t size, int value)
 	for (; i < size; i++)
 	{
 		printf("Value checked array[%lu] = [%lu]\n", i, i);
-		if (array[i] == value)
-			return (i);
-		else if (array[i + root] >= value)
+		if (array[i + root] >= value)
 		{
 			if (found == 0)
 			{
@@ -26,6 +24,8 @@ int jump_search(int *array, size_t size, int value)
 				found = 1;
 			}
 		}
+		if (array[i] == value)
+			return (i);
 		else if (array[i + root] < value)
 			i += root - 1;
 	}
