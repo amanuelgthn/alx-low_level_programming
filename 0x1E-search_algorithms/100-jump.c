@@ -4,6 +4,7 @@
 * using the jump search algorithm
 * @array: pointer to the first element of the array to be searched
 * @size: number of elements in the array
+* @value: value to be searched in the given array
 * Return: first index where the value is located or -1 if not present or
 * the array is NULL
 **/
