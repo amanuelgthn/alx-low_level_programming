@@ -10,21 +10,20 @@ int interpolation_serch(int *array, size_t size, int value)
 {
 	size_t low = 0, pos, high = size- 1;
 
-	while ((array[high] != array[low]) && (key >= array[low]) && (key <= array[high]))
+	while ((array[high] != array[low]) && (value >= array[low]) && (key <= array[high]))
 	{
 		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
 		if (array[pos] < key)
 			low = pos + 1;
 		else if (key < array[pos])
-			high = pos - 1
+			high = pos - 1;
 		else
 			return pos;
 	}
-	if (value = array[low])
+	if (value == array[low])
 		return low;
 	else
 	{
 		printf("Value checked array[%lu] is out of range\n", pos);
 		return (-1);
 }
-
