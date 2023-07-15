@@ -18,8 +18,7 @@ int jump_search(int *array, size_t size, int value)
 	for (; i < size; i++)
 	{
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-		if (array[i + root] >= value || i == size - 1 ||
-		(array[i + root] < value && i + root >= size))
+		if (array[i + root] >= value || i == size - 1)
 		{
 			if (found == 0)
 			{
@@ -30,7 +29,7 @@ int jump_search(int *array, size_t size, int value)
 		}
 		if (array[i] == value)
 			return (i);
-		if (array[i + root] < value && i + root < size)
+		if (array[i + root] < value)
 		{
 			i += root - 1;
 		}
