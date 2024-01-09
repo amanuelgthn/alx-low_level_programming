@@ -1,2 +1,2 @@
 #!/bin/bash
-# "C-Programming\n"
+# C-Programming
